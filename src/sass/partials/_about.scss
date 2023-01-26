@@ -1,0 +1,95 @@
+$fontPrimary: 'DM Sans', sans-serif;
+$fontSecondary: 'Titan One', cursive;
+
+// Tu wrzucam globalny reset i czcinki
+// Nie chcę tego łączyć, bo to tylko chwilowe rozwiązanie
+// Jak będzie to wrzucone w globalsy to usunę
+.about {
+  font-family: $fontPrimary;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  padding: 125px 20px 0;
+  background-color: #fff5f6;
+  background-image: url(../images/sectionbg1.png);
+  background-repeat: no-repeat;
+  background-position: center bottom 44px;
+  background-size: 100% 133px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 440px;
+    margin: 0 auto;
+    gap: 26px;
+  }
+  &__header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  &__header {
+    font-family: $fontSecondary;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    &--primary {
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      color: #d41443;
+    }
+    &--secondary {
+      font-size: 18px;
+      line-height: 1.17;
+      color: #ffa5ba;
+    }
+  }
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+  }
+  &__content-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding: 0 30px;
+  }
+  &__description {
+    font-size: 12px;
+    line-height: 1.62;
+    &--primary {
+      color: #000000;
+    }
+    &--secondary {
+      color: #907e82;
+    }
+  }
+  &__button {
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    background-color: #ffffff;
+    color: #d41443;
+    align-self: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    gap: 13.62px;
+    align-items: center;
+    justify-content: center;
+  }
+}
