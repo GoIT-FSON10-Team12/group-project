@@ -12,3 +12,10 @@ body {
   font-family: $DefaultFontFamily;
   font-family: $SecondaryFontFamily;
 }
+img {
+    display: block;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
