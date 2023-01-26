@@ -165,7 +165,7 @@ h2 {
 }
 
 .advantages__icon--first::before {
-  content: "";
+  content: "•";
   background-image: url(../images/icon1.png);
   width: 33px;
   height: 50px;
