@@ -1,23 +1,29 @@
 // // Usunięcie styli przeglądarki
- * {
+* {
   text-decoration: none;
   color: inherit;
   margin: 0;
   padding: 0;
 }
 
-// // Czcionki dla dokumentu
+// Czcionki dla dokumentu
+
+// body {
+//   font-family: $DefaultFontFamily;
+//   font-family: $SecondaryFontFamily;
+// }
 
 body {
-  font-family: $DefaultFontFamily;
-  font-family: $SecondaryFontFamily;
- }
+  font-family: "DM Sans", sans-serif;
+  }
 
- img {
-    display: block;
- }
 
- * {
-    margin: 0;
-    padding: 0;
- }
+img {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
