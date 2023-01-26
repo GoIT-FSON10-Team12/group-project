@@ -1,1 +1,13 @@
-{"version":3,"sources":["main.css","main.scss","partials/_globals.scss","_gallery.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;;;EAAA;ACAA;EACI,cAAA;AFMJ;;AEJA;EACI,SAAA;EACA,UAAA;AFOJ;;AGZA;EACI,cAAA;EACA,YAAA;AHeJ","file":"main.css"}
+{
+  "version": 3,
+  "sources": [
+    "main.css",
+    "main.scss",
+    "partials/_globals.scss",
+    "_gallery.scss",
+    "_advantages.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA,gBAAgB;ACAhB;;;EAAA;ACAA;EACI,cAAA;AFMJ;;AEJA;EACI,SAAA;EACA,UAAA;AFOJ;;AGZA;EACI,cAAA;EACA,YAAA;AHeJ",
+  "file": "main.css"
+}
