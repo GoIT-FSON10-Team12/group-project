@@ -1,0 +1,102 @@
+.contacts {
+  background-color: $SectionSeventhColor;
+  font-family: $DefaultFontFamily;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 480px;
+    padding: 0 50px;
+    margin: 0 auto 54px;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__container {
+    background-color: $BtnSecondaryColor;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    max-width: 220px;
+  }
+
+  &__list {
+    padding: 43px 20px;
+
+    &-container {
+      list-style: none;
+    }
+
+    &-element {
+      padding: 25px 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $SectionSixthColor;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__category {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    color: $TextSecondColor;
+    border-radius: 4px;
+    max-width: 80px;
+    height: 16px;
+    margin-bottom: 25px;
+    background-color: $SectionThirdColor;
+
+    &--color {
+      background-color: $SectionFourthColor;
+      max-width: 140px;
+    }
+  }
+
+  &__town {
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+
+    &-desc {
+      color: $TextFourthColor;
+    }
+  }
+
+  &__days {
+    line-height: 186%;
+  }
+
+  &__hours {
+    line-height: 186%;
+    color: $TextThirdColor;
+
+    &:nth-of-type(2) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__address {
+    color: $TextFourthColor;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
