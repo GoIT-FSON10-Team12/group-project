@@ -166,7 +166,9 @@ h2 {
 
 .advantages__icon--first::before {
   content: "";
-  background-image: url(/src/images/icon1.png);
+  background-image: url(../images/icon1.png);
   width: 33px;
   height: 50px;
+  display: block;
+  z-index: 3;
 }/*# sourceMappingURL=main.css.map */
