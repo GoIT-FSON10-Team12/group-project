@@ -72,27 +72,6 @@ h2 {
   height: 50px;
 }
 
-* {
-  text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "DM Sans", sans-serif;
-  font-family: "Titan One", cursive;
-}
-
-img {
-  display: block;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .gallery img {
   margin: 0 auto;
   height: auto;
