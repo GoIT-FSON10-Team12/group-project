@@ -26,11 +26,22 @@ h2 {
   margin-bottom: 38px;
 }
 
+// .advantages__header {
+//   font-family: $SecondaryFontFamily;
+//   font-weight: 400;
+//   font-size: 36px;
+//   line-height: 1.14;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: #d41443;
+// }
+
 .advantages__header {
-  font-family: $SecondaryFontFamily;
+  font-family: 'Titan One';
+  font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 1.14;
+  line-height: 41px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
@@ -47,7 +58,7 @@ h2 {
 
 .advantages__icon--first::before {
   content: '';
-  background-image: url(../src/images/icon1.png);
+  background-image: url(./images/icon1.png);
   width: 33px;
   height: 50px;
 }
