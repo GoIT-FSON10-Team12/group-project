@@ -52,7 +52,7 @@ h2 {
 }
 
 .advantages__header {
-  font-family: "Titan One", cursive;
+  font-family: "Titan One";
   font-weight: 400;
   font-size: 36px;
   line-height: 1.14;
@@ -62,7 +62,6 @@ h2 {
 }
 
 .advantages__paragraph {
-  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
