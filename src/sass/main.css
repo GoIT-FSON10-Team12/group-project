@@ -35,7 +35,7 @@ img {
   background-color: #fff5f6;
   background-image: url(../images/sectionbg1.png);
   background-repeat: no-repeat;
-  background-position: center bottom 44px;
+  background-position: bottom 44px right;
   background-size: 100% 133px;
 }
 .about__wrapper {
@@ -169,6 +169,4 @@ h2 {
   background-image: url(../images/icon1.png);
   width: 33px;
   height: 50px;
-  display: block;
-  z-index: 3;
 }/*# sourceMappingURL=main.css.map */
