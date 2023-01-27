@@ -1,0 +1,142 @@
+.button {
+  &__buy {
+    display: none;
+    @include tablet {
+      display: flex;
+      margin-right: 34px;
+      width: 160px;
+      height: 44px;
+      background-color: #ffffff;
+      color: #d41443;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 22px;
+      border: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    @include desktop {
+      display: flex;
+      margin-right: 115px;
+    }
+    &__buy:hover {
+      background-color: #ecebeb;
+      transform: scale(1.05);
+    }
+  }
+  &__red {
+    width: 62.4px;
+    height: 24px;
+    border-radius: 20px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #d41443;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    @include desktop {
+      width: 104px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.29;
+    }
+  }
+  &__red:hover {
+    background-color: #c7133e;
+    transform: scale(1.05);
+  }
+  &__white {
+    width: 82.8px;
+    height: 24px;
+    border-radius: 20px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #ffffff;
+    color: #d41443;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    @include desktop {
+      width: 138px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.29;
+    }
+  }
+  &__white:hover {
+    background-color: #ecebeb;
+    transform: scale(1.05);
+  }
+  &__slider {
+    display: none;
+    @include tablet {
+      display: flex;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: none;
+      align-items: center;
+      cursor: pointer;
+    }
+    @include desktop {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  &__arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #d41443;
+    border-bottom: 1px solid #d41443;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all 0.3s ease;
+    @include desktop {
+      width: 8px;
+      height: 8px;
+      border-right: 1px solid #d41443;
+      border-bottom: 1px solid #d41443;
+      margin: 0 8px;
+    }
+  }
+  &__arrow::before {
+    display: block;
+    background-color: #d41443;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-1px / 2);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    content: '';
+    right: 0;
+  }
+  &__slider:hover > .button__arrow {
+    transform: rotate(-45deg) translate(0px, 0px);
+    border-color: text-hover-color;
+  }
+
+  &__slider:hover > .button__arrow::before {
+    opacity: 1;
+    width: 7px;
+    @include desktop {
+      width: 9px;
+    }
+  }
+}

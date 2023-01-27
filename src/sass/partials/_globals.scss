@@ -5,10 +5,22 @@
   margin: 0;
   padding: 0;
 }
-
+ul {
+  list-style: none;
+}
 // Czcionki dla dokumentu
 
 body {
-  font-family: $DefaultFontFamily;
-  font-family: $SecondaryFontFamily;
+  overflow: hidden;
+  // font-family: $DefaultFontFamily;
+  // font-family: $SecondaryFontFamily;
+}
+.container {
+  max-width: 480px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
 }
