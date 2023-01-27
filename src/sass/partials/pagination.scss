@@ -1,6 +1,6 @@
-@import './swiper-vars.scss';
+@import 'swiper-vars.scss';
 @at-root {
-  :root {
+    :root {
     
   --swiper-pagination-color: var(--swiper-theme-color);
   --swiper-pagination-bullet-size: 8px;
