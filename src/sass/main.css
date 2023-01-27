@@ -5,73 +5,70 @@
  */
 .container {
   margin: 0 auto;
-  min-width: 320px;
 }
 
 .wrapper {
   margin: 0 auto;
   padding: 80px 20px 0px 20px;
+  min-width: 320px;
+  max-width: 767px;
 }
 
 .reviews {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   min-width: 280px;
-  max-width: 926px;
 }
 .reviews__image {
   padding-bottom: 29px;
 }
-.reviews__text-box {
+.reviews__text-wraper {
   display: block;
   background-color: #fafafa;
-  position: relative;
-  padding: 43px 50px 17px 50px;
+  padding: 28px 50px 17px 50px;
 }
-.reviews__text-box::after {
+.reviews__text-wraper::before {
   content: "";
   display: block;
   background-image: url(../images/quote.png);
   width: 54px;
   height: 40px;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  position: absolute;
-  left: 61px;
-  top: 28px;
 }
 .reviews__text {
+  background-image: repeating-linear-gradient(transparent 0px, transparent 29px, #E1E1E1 29px, #E1E1E1 30px);
   display: block;
   padding: 0px 16px 0px 7px;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 12px;
-  line-height: 2.55;
+  line-height: 2.53;
   text-align: center;
-  background: repeating-linear-gradient(transparent 0px, transparent 29px, #E1E1E1 29px, #E1E1E1 30px);
+}
+.reviews__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.reviews__item::after {
+  content: "";
+  display: inline-block;
+  margin-top: 30px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #c7133e;
 }
 .reviews__client-name {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
-  padding-top: 52px;
+  padding-top: 18px;
   text-align: center;
   position: relative;
-}
-.reviews__client-name::after {
-  content: "";
-  display: block;
-  background-image: url(../images/threepoints.png);
-  width: 32px;
-  height: 8px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .pagination {
