@@ -1,13 +1,14 @@
 .hero-header {
   background-color: #ffb8ca;
-  //   background-image: (url(/src/images/header-icecream-1x.png));
-  //   position: absolute;
-  //   background-repeat: no-repeat;
-  //   background-position: 117px 92px;
-  //   background-size: contain;
-  //   @include tablet {
-  //     background-position: 378px 73px;
-  //   }
+  overflow: hidden;
+  position: relative;
+  min-height: 502px;
+  @include tablet {
+    min-height: 399px;
+    @include desktop {
+      min-height: 665px;
+    }
+  }
   &__container {
     display: flex;
     padding-top: 6px;
@@ -31,13 +32,16 @@
       flex-wrap: nowrap;
     }
   }
+  &__navigation {
+    z-index: 1;
+  }
   &__nav {
     margin-left: 110px;
     margin-right: 110px;
     display: flex;
-    flex-wrap: nowrap;
     gap: 35px;
     list-style: none;
+    align-items: center;
   }
   &__nav-link {
     text-decoration: none;
@@ -50,8 +54,10 @@
   &__nav-link:hover,
   &__nav-link:focus {
     color: #d41443;
+    outline: none;
   }
   &__hamburger {
+    z-index: 1;
     margin-left: 62px;
     margin-right: 19px;
     @include tablet {
@@ -62,7 +68,6 @@
       display: none;
     }
   }
-
   &__title {
     position: relative;
     margin-top: 137px;
@@ -73,10 +78,12 @@
     @include tablet {
       margin-top: 15px;
       margin-left: 34px;
+      margin-right: 34px;
     }
     @include desktop {
-      margin-top: 171px;
+      margin-top: 84px;
       margin-left: 115px;
+      margin-right: 97px;
     }
   }
   &__title-button {
@@ -87,39 +94,92 @@
     }
   }
   &__title-stats {
-    position: relative;
-  }
-  &__small-ellipse {
     display: none;
-    position: fixed;
-    // display: flex;
-    width: 16px;
-    height: 16px;
-    transform: translateX(300%);
-
-    // z-index: 3;
+    @include tablet {
+      display: block;
+    }
+  }
+  &__main-img {
+    width: 346px;
+    height: 344px;
+    display: block;
+    background-color: #ffa5ba;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 36px;
+    @include tablet {
+      width: 324px;
+      height: 322px;
+      top: 31px;
+      left: 307px;
+    }
+    @include desktop {
+      width: 538px;
+      height: 538px;
+      top: 52px;
+      left: 475px;
+      z-index: 0;
+    }
+  }
+  &__background-img {
+    position: absolute;
+    vertical-align: middle;
+    width: 171px;
+    height: auto;
+    left: 50%;
+    top: 9px;
+    transform: translateX(-50%);
+    @include tablet {
+      width: 143px;
+      right: 247px;
+      top: 32px;
+      transform: translateX(-65%);
+    }
+    @include desktop {
+      width: 236px;
+      right: 469px;
+      top: 55px;
+    }
   }
   &__promo {
     display: flex;
     gap: 30px;
   }
-  &__promo-img {
+  &__promo-box {
     display: none;
     @include tablet {
-      display: flex;
-      margin: 19px 0px 28px 34px;
+      display: block;
+    }
+  }
+  &__promo-box-img {
+    @include tablet {
+      display: block;
+      position: absolute;
+      width: 124px;
+      height: auto;
+      left: 35px;
+      top: 245px;
     }
     @include desktop {
-      display: flex;
-      margin: 56px 30px 45px 77px;
+      width: 188px;
+      height: auto;
+      left: 77px;
+      top: 429px;
+    }
+  }
+  &__promo-description {
+    @include tablet {
+    }
+    @include desktop {
     }
   }
   &__promo-description-text {
     display: none;
     @include tablet {
       display: flex;
-      margin: 66px 228px 7px 0px;
       width: 114px;
+      margin: 66px 500px 7px 154px;
       font-style: normal;
       font-weight: 400;
       font-size: 8px;
@@ -136,35 +196,34 @@
       flex-wrap: wrap;
       text-align: left;
       width: 200px;
+      margin: 112px 785px 20px 295px;
+    }
+  }
+  &__promo-description-button {
+    @include desktop {
+      margin-left: 140px;
     }
   }
   &__promo-girl {
     display: none;
     @include tablet {
-      display: flex;
-      margin-right: 34px;
-      margin-top: 72px;
+      display: block;
     }
   }
-  &__main-slider {
-    margin: 0;
-    height: auto;
-  }
-  &__background-ellipse {
-    position: relative;
-    z-index: 0;
-    width: 346px;
-    height: 344px;
-    // top: -219px;
-    transform: translateY(-80%);
-    transform: translateX(0%);
-  }
-  &__background-img {
-    position: absolute;
-    width: 171px;
-    height: 410px;
-    left: 117px;
-    transform: translateY(-61%);
-    // top: 92px;
+  &__promo-girl-img {
+    @include tablet {
+      display: block;
+      position: absolute;
+      width: 168px;
+      height: auto;
+      left: 566px;
+      top: 266px;
+    }
+    @include desktop {
+      width: 293px;
+      height: auto;
+      top: 433px;
+      left: 878px;
+    }
   }
 }

@@ -17,15 +17,14 @@
       font-size: 16px;
       line-height: 1.31;
       cursor: pointer;
-      transition: transform 0.2s;
+      outline: none;
+    }
+    &__buy:hover {
+      background-color: #ecebeb;
     }
     @include desktop {
       display: flex;
       margin-right: 115px;
-    }
-    &__buy:hover {
-      background-color: #ecebeb;
-      transform: scale(1.05);
     }
   }
   &__red {
@@ -50,9 +49,11 @@
       line-height: 1.29;
     }
   }
-  &__red:hover {
+  &__red:hover,
+  &__red:focus {
     background-color: #c7133e;
     transform: scale(1.05);
+    outline: none;
   }
   &__white {
     width: 82.8px;
@@ -76,14 +77,17 @@
       line-height: 1.29;
     }
   }
-  &__white:hover {
+  &__white:hover,
+  &__white:focus {
     background-color: #ecebeb;
     transform: scale(1.05);
+    outline: none;
   }
   &__slider {
     display: none;
     @include tablet {
       display: flex;
+      margin-left: 154px;
       width: 18px;
       height: 18px;
       border-radius: 50%;

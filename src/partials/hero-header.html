@@ -33,7 +33,7 @@
   </div>
   <div class="hero-header__title">
     <div class="hero-header__title-text">
-      <h2 class="title__white">ICE CREAM<br />MADE WITH</h2>
+      <h1 class="title__white">ICE CREAM<br />MADE WITH</h1>
       <h1 class="title__red">Passion</h1>
       <div class="hero-header__title-button">
         <button type="button" class="button__red">Products</button>
@@ -41,29 +41,29 @@
       </div>
     </div>
     <div class="hero-header__title-stats">
-      <h3 class="title__stat">16</h3>
-      <p class="title__stat-desription">cafe</p>
-      <img
-        alt="Statistic Small White Ellipse"
-        src="/src/images/tablet/small-ellipse-1x.png"
-        class="hero-header__small-ellipse"
-      />
-      <h3 class="title__stat">23</h3>
-      <p class="title__stat-desription">food trucks</p>
-      <img
-        alt="Statistic Small White Ellipse"
-        src="/src/images/tablet/small-ellipse-1x.png"
-        class="hero-header__small-ellipse"
-      />
+      <div class="title__stat-wrapper">
+        <h3 class="title__stat">16</h3>
+        <p class="title__stat-desription">cafe</p>
+      </div>
+      <div class="title__stat-wrapper">
+        <h3 class="title__stat">23</h3>
+        <p class="title__stat-desription">food trucks</p>
+      </div>
     </div>
   </div>
   <div class="hero-header__promo">
-    <div class="hero-header__promo-img">
+    <div class="hero-header__promo-box">
       <img
         alt="milk"
         src="/src/images/tablet/header-bioeco-tablet-1x.png"
-        width="124px"
-        height="126px"
+        srcset="
+          /src/images/tablet/header-bioeco-tablet-1x.png   124w,
+          /src/images/tablet/header-bioeco-tablet-2x.png   248w,
+          /src/images/desktop/header-bioeco-desktop-1x.png 188w,
+          /src/images/desktop/header-bioeco-desktop-1x.png 376w
+        "
+        sizes="(min-width: 320px) 171px, (min-width: 768px) 143w, (min-width: 1200px) 236w, 100vw"
+        class="hero-header__promo-box-img"
       />
     </div>
     <div class="hero-header__promo-description">
@@ -71,23 +71,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </p>
-      <button type="button" class="button__slider"><span class="button__arrow"></span></button>
+      <div class="hero-header__promo-description-button">
+        <button type="button" class="button__slider"><span class="button__arrow"></span></button>
+      </div>
     </div>
-    <div class="hero-header__main-slider">
-      <img
-        alt="Main Page Background Ellipse"
-        src="/src/images/ellipse-1x.png"
-        srcset="
-          /src/images/ellipse-1x.png                  346w,
-          /src/images/ellipse-2x.png                  692w,
-          /src/images/tablet/ellipse-tablet-1x.png    324w,
-          /src/images/tablet/ellipse-tablet-2x.png    648w,
-          /src/images/desktop/ellipse-desktop-1x.png  538w,
-          /src/images/desktop/ellipse-desktop-2x.png 1076w
-        "
-        sizes="(min-width: 320px) 346px, (min-width: 768px) 324w, (min-width: 1200px) 538w, 100vw"
-        class="hero-header__background-ellipse"
-      />
+    <div class="hero-header__main-img">
       <img
         alt="Main Page Icecream"
         src="/src/images/header-icecream-1x.png"
@@ -107,8 +95,14 @@
       <img
         alt="milk"
         src="/src/images/tablet/header-tasty-tablet-1x.png"
-        width="168px"
-        height="133px"
+        srcset="
+          /src/images/tablet/header-tasty-tablet-1x.png   168w,
+          /src/images/tablet/header-tasty-tablet-2x.png   336w,
+          /src/images/desktop/header-tasty-desktop-1x.png 293w,
+          /src/images/desktop/header-tasty-desktop-2x.png 586w
+        "
+        sizes="(min-width: 768px) 168w, (min-width: 1200px) 293w, 100vw"
+        class="hero-header__promo-girl-img"
       />
     </div>
   </div>
