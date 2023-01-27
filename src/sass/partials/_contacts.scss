@@ -98,5 +98,28 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-bottom: 100px;
+  }
+
+  &__button {
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+    height: 44px;
+
+    &--main {
+      color: $TextSecondColor;
+      // zmienić kolor na zmienną
+      background-color: #d41342;
+      padding: 0 17px;
+    }
+
+    &--second {
+      color: $TextFirstColor;
+      background-color: $TextSecondColor;
+      padding: 0 32px;
+    }
   }
 }
