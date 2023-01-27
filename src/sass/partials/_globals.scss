@@ -6,13 +6,20 @@
   padding: 0;
 }
 
-// Czcionki dla dokumentu
-
- body {
-   font-family: $DefaultFontFamily;
-   font-family: $SecondaryFontFamily;
+//* Dubel z _adcantages *//
+p,
+ul,
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
+// Czcionki dla dokumentu
+
+body {
+  font-family: $DefaultFontFamily;
+  font-family: $SecondaryFontFamily;
+}
 
 img {
   display: block;
@@ -22,4 +29,3 @@ img {
   margin: 0;
   padding: 0;
 }
-
