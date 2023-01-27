@@ -4,4 +4,10 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+
+@import './partials/typography.scss';
+@import './partials/globals.scss';
+@import './partials/about.scss';
+@import './partials/gallery.scss';
+@import './partials/advantages.scss';
+

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+* {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  padding: 125px 20px 0;
+  background-color: #fff5f6;
+  background-image: url(../images/sectionbg1.png);
+  background-repeat: no-repeat;
+  background-position: bottom 44px right;
+  background-size: 100% 133px;
+}
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 440px;
+  margin: 0 auto;
+  gap: 26px;
+}
+.about__header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.about__header {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about__header--primary {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+.about__header--secondary {
+  font-size: 18px;
+  line-height: 1.17;
+  color: #ffa5ba;
+}
+.about__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+.about__content-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  padding: 0 30px;
+}
+.about__description {
+  font-size: 12px;
+  line-height: 1.62;
+}
+.about__description--primary {
+  color: #000000;
+}
+.about__description--secondary {
+  color: #907e82;
+}
+.about__button {
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  background-color: #ffffff;
+  color: #d41443;
+  align-self: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  gap: 13.62px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery img {
+  margin: 0 auto;
+  height: auto;
+}
+
+p,
+ul,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 420px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.container--advantages {
+  background: #fff5f6;
+}
+
+.advantages {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+.advantages__list-item:not(:last-of-type) {
+  margin-bottom: 38px;
+}
+
+.advantages__header {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.advantages__paragraph {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+}
+
+.advantages__icon--first::before {
+  content: "•";
+  background-image: url(../images/icon1.png);
+  width: 33px;
+  height: 50px;
+}/*# sourceMappingURL=main.css.map */
