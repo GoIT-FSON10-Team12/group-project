@@ -3,5 +3,8 @@
 <symbol id="icon-vector-1" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #d41443)" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
 </symbol>
+<symbol id="icon-vector-2" viewBox="0 0 26 32">
+<path fill="none" stroke="#fff" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #fff)" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+</symbol>
 </defs>
 </svg>

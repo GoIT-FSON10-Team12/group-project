@@ -1,9 +1,19 @@
 .contacts {
   background-color: $SectionSeventhColor;
-  font-family: $DefaultFontFamily;
+  // font-family: $DefaultFontFamily;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+
+  // jeśli użyjemy kodu poniżej padding-bottom: 29px; powinien wyrównać odległość do danych z projektu
+  padding-bottom: 29px;
+
+  // kod do przesunięcia elementów w górę - trzeba dodać do sekcji powyżej padding-bottom: 86px; żeby się nie nałożyło na siebie
+
+  // &__container-shift {
+  //   position: relative;
+  //   top: -84px;
+  // }
 
   &__wrapper {
     display: flex;
@@ -98,7 +108,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-bottom: 100px;
   }
 
   &__button {
@@ -107,19 +116,31 @@
     font-size: 16px;
     line-height: 1.31;
     border-radius: 22px;
+    width: 161px;
     height: 44px;
 
     &--main {
       color: $TextSecondColor;
-      // zmienić kolor na zmienną
-      background-color: #d41342;
-      padding: 0 17px;
+      background-color: $BtnThirdColor;
     }
 
     &--second {
       color: $TextFirstColor;
       background-color: $TextSecondColor;
-      padding: 0 32px;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $BtnHoverColorPrimary;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-pointer {
+      margin-left: 8px;
     }
   }
 }
