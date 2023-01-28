@@ -22,10 +22,14 @@
     }
     &__text-wraper {
         display: block;
+        position: relative;
         background-color: $bgreviewColor;
         padding: 28px 50px 17px 50px;
         &::before {
             content: "";
+            position: absolute;
+            top: 16px;
+            left: 61px;
             display: block;
             background-image: url(../images/quote.png);
             width: 54px;
@@ -36,6 +40,8 @@
             transparent 0px, transparent 29px, 
             $linearReviewColor 29px, $linearReviewColor 30px,); 
         display: block;
+        position: relative;
+        z-index: 1;
         padding: 0px 16px 0px 7px;
         font-family: $DefaultFontFamily;
         font-weight: 500;
