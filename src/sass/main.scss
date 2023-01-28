@@ -1,26 +1,14 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-
-// Style dla pliku z przykładem HTML fragmentu
-
 @import './partials/typography.scss';
 @import './partials/colors';
 @import './partials/globals.scss';
-@import './partials/about.scss';
-@import './partials/gallery.scss';
-
-@import './partials/contacts.scss';
-
-// @import './partials/advantages.scss';
-@import './partials/advantages_v2.scss';
-@import './partials/contacts.scss';
-@import './partials/footer';
-
-// @import './example';
-@use './partials/mixins' as *;
-@import './partials/hero-header';
-@import './partials/title';
-@import './partials/colors';
 @import './partials/button';
+@import './partials/hero-header';
+@import './partials/about.scss';
+@import './partials/advantages_v2.scss';
+@import './partials/gallery.scss';
+@import './partials/contacts.scss';
+@import './partials/reviews';
+@import './partials/footer';
+@import './partials/title';
+
+@use './partials/mixins' as *;
