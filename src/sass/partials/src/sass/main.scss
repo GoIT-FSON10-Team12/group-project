@@ -1,0 +1,14 @@
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+
+// Style dla pliku z przykładem HTML fragmentu
+
+@import './partials/typography.scss';
+@import './partials/globals.scss';
+@import './partials/about.scss';
+@import './partials/gallery.scss';
+// @import './partials/advantages.scss';
+@import './partials/advantages_v2.scss';
+
