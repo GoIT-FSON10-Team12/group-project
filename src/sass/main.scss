@@ -1,3 +1,5 @@
+@use './partials/mixins' as *;
+
 @import './partials/typography.scss';
 @import './partials/colors';
 @import './partials/globals.scss';
@@ -11,4 +13,3 @@
 @import './partials/footer';
 @import './partials/title';
 
-@use './partials/mixins' as *;
