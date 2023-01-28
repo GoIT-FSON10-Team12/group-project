@@ -18,13 +18,23 @@
       line-height: 1.31;
       cursor: pointer;
       outline: none;
+      transition: transform 0.2s;
     }
-    &__buy:hover {
-      background-color: #ecebeb;
-    }
+  }
+  &__buy:hover {
+    background-color: #ecebeb;
+    transform: scale(1.05);
+  }
+  &__buy:hover > .button__arrow {
+    transform: rotate(-45deg) translate(0px, 0px);
+    border-color: text-hover-color;
+  }
+
+  &__buy:hover > .button__arrow::before {
+    opacity: 1;
+    width: 7px;
     @include desktop {
-      display: flex;
-      margin-right: 115px;
+      width: 9px;
     }
   }
   &__red {
