@@ -18,3 +18,9 @@
 @import './partials/contacts.scss';
 @import './partials/footer';
 
+// @import './example';
+@use './partials/mixins' as *;
+@import './partials/hero-header';
+@import './partials/title';
+@import './partials/colors';
+@import './partials/button';
