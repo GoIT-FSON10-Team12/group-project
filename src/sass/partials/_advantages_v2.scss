@@ -1,11 +1,17 @@
 p,
-ul {
+ul,
+section {
   margin: 0;
   padding: 0;
 }
 
 .advantages {
   background-color: #fff5f6;
+}
+
+.wrapper {
+  max-width: 440px;
+  margin: 0 auto;
 }
 
 .container {
@@ -24,8 +30,8 @@ ul {
   flex-direction: column;
   padding-right: 50px;
 
-  &__item:not(:last-of-type) {
-    margin-bottom: 38px;
+  &__item {
+    padding-bottom: 38px;
   }
 
   &__number {
