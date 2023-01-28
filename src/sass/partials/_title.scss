@@ -1,0 +1,91 @@
+.title {
+  &__white {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    @include tablet {
+      font-size: 22px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      font-size: 38px;
+      line-height: 1.16;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__red {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.95;
+    letter-spacing: 0.04em;
+    color: #d41443;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 34px;
+      line-height: 0.88;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: 52px;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__stat-wrapper {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      right: 50%;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      z-index: -1;
+      transform: translate(130%, -25%);
+      @include desktop {
+        width: 30px;
+        height: 30px;
+        transform: translate(115%, -15%);
+      }
+    }
+  }
+  &__stat {
+    @include tablet {
+      font-family: 'Titan One';
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      color: #d41443;
+    }
+    @include desktop {
+      font-size: 46px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__stat-desription {
+    display: none;
+    @include tablet {
+      display: flex;
+      margin-bottom: 14px;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      color: #ffffff;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.29;
+      margin-bottom: 15px;
+    }
+  }
+}
