@@ -1,0 +1,82 @@
+.footer {
+  background-color: $SectionFifthColor;
+  border-bottom: 1px solid $SectionSixthColor;
+
+  &__wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 20px 43px 20px;
+  }
+
+  &__title {
+    font-family: $SecondaryFontFamily;
+    text-transform: uppercase;
+    max-width: 234px;
+    margin-bottom: 43px;
+
+    &-head {
+      font-size: 18px;
+      line-height: 1.16;
+      color: $SectionSecondColor;
+      margin-bottom: 17px;
+    }
+
+    &-text {
+      font-size: 34px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      color: $TextFirstColor;
+    }
+  }
+
+  &__icons-container {
+    margin-bottom: 46px;
+  }
+
+  &__icons {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 28.24px;
+  }
+
+  &__icon {
+    fill: $TextSecondColor;
+    background-color: $IconBackgroundColor;
+    border-radius: 50%;
+    padding: 5px;
+    overflow: visible;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $TextFirstColor;
+    }
+  }
+
+  &__contact {
+    text-align: right;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+
+    &-telephone {
+      color: $TextFirstColor;
+    }
+  }
+}
+
+.copyright {
+  background-color: $SectionFifthColor;
+
+  &__wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 22px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    color: $TextFourthColor;
+  }
+}
