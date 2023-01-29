@@ -1,6 +1,6 @@
 .about {
   padding: 125px 20px 10px;
-  background-color: $SectionFifthColor;
+  background-color: $SectionFifthSevenColor;
   background-image: url(../images/sectionbg1.png);
   background-repeat: no-repeat;
   background-position: bottom 61px right;
@@ -28,12 +28,12 @@
       font-size: 34px;
       line-height: 1.15;
       letter-spacing: 0.04em;
-      color: $TextFirstColor;
+      color: $TextFirstBtnPrimaryColor;
     }
     &--secondary {
       font-size: 18px;
       line-height: 1.17;
-      color: $TextThirdColor;
+      color: $SectionSecondTextThirdColor;
     }
   }
   &__content-wrapper {
@@ -66,8 +66,8 @@
     border-radius: 22px;
     border: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: $BtnSecondaryColor;
-    color: $BtnPrimaryColor;
+    background-color: $TextBtnSecondaryColor;
+    color: $TextFirstBtnPrimaryColor;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
