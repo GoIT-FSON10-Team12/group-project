@@ -1,0 +1,146 @@
+<header class="hero-header">
+  <div class="hero-header__container container">
+    <a class="hero-header__logo" href="index.html" title="Strona główna">
+      <img alt="icecream-logo" src="/src/images/logo.png" />
+    </a>
+    <div class="hero-header__wrapper">
+      <nav class="hero-header__navigation">
+        <ul class="hero-header__nav">
+          <li class="hero-header__nav-item">
+            <a class="hero-header__nav-link" href="index.html">Home</a>
+          </li>
+          <li class="hero-header__nav-item">
+            <a class="hero-header__nav-link" href="#">About us</a>
+          </li>
+          <li class="hero-header__nav-item">
+            <a class="hero-header__nav-link" href="#">How it's made?</a>
+          </li>
+          <li class="hero-header__nav-item">
+            <a class="hero-header__nav-link" href="#">Our products</a>
+          </li>
+          <li class="hero-header__nav-item">
+            <a class="hero-header__nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="hero-header__hamburger-icon" width="24" height="12">
+        <use href="/src/images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="button__buy">Buy now<span class="button__arrow"></span></button>
+  </div>
+  <div class="hero-header__title container">
+    <div class="hero-header__title-text">
+      <h1 class="title__white">ICE CREAM<br />MADE WITH</h1>
+      <h1 class="title__red">Passion</h1>
+      <div class="hero-header__title-button">
+        <button type="button" class="button__red">Products</button>
+        <button type="button" class="button__white">How it's made?</button>
+      </div>
+    </div>
+    <div class="hero-header__title-stats">
+      <div class="title__stat-wrapper">
+        <h3 class="title__stat">16</h3>
+        <p class="title__stat-desription">cafe</p>
+      </div>
+      <div class="title__stat-wrapper">
+        <h3 class="title__stat">23</h3>
+        <p class="title__stat-desription">food trucks</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-header__promo">
+    <div class="hero-header__promo-box">
+      <img
+        alt="milk"
+        src="/src/images/tablet/header-bioeco-tablet-1x.png"
+        srcset="
+          /src/images/tablet/header-bioeco-tablet-1x.png   124w,
+          /src/images/tablet/header-bioeco-tablet-2x.png   248w,
+          /src/images/desktop/header-bioeco-desktop-1x.png 188w,
+          /src/images/desktop/header-bioeco-desktop-1x.png 376w
+        "
+        sizes="(min-width: 320px) 171px, (min-width: 768px) 143w, (min-width: 1200px) 236w, 100vw"
+        class="hero-header__promo-box-img"
+      />
+    </div>
+    <div class="hero-header__promo-description">
+      <p class="hero-header__promo-description-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <div class="hero-header__promo-description-button">
+        <button type="button" class="button__slider"><span class="button__arrow"></span></button>
+      </div>
+    </div>
+    <div class="hero-header__main-img">
+      <img
+        alt="Main Page Icecream"
+        src="/src/images/header-icecream-1x.png"
+        srcset="
+          /src/images/header-icecream-1x.png                 171w,
+          /src/images/header-icecream-2x.png                 242w,
+          /src/images/tablet/header-icecream-tablet-1x.png   143w,
+          /src/images/tablet/header-icecream-tablet-2x.png   286w,
+          /src/images/desktop/header-icecream-desktop-1x.png 236w,
+          /src/images/desktop/header-icecream-desktop-2x.png 472w
+        "
+        sizes="(min-width: 320px) 171px, (min-width: 768px) 143w, (min-width: 1200px) 236w, 100vw"
+        class="hero-header__background-img"
+      />
+    </div>
+    <div class="hero-header__promo-girl">
+      <img
+        alt="milk"
+        src="/src/images/tablet/header-tasty-tablet-1x.png"
+        srcset="
+          /src/images/tablet/header-tasty-tablet-1x.png   168w,
+          /src/images/tablet/header-tasty-tablet-2x.png   336w,
+          /src/images/desktop/header-tasty-desktop-1x.png 293w,
+          /src/images/desktop/header-tasty-desktop-2x.png 586w
+        "
+        sizes="(min-width: 768px) 168w, (min-width: 1200px) 293w, 100vw"
+        class="hero-header__promo-girl-img"
+      />
+    </div>
+  </div>
+
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="mobile-menu__icon">
+        <use width="14" height="14" href="./images/icons.svg#icon-mobile-close"></use>
+      </svg>
+    </button>
+    <button type="button" class="button__white button__white--mobile-menu">
+      <div class="button-wrapper">
+        <span class="button__label">Buy now</span>
+        <svg class="button__arrow-icon" width="8" height="14">
+          <use href="./images/icons.svg#icon-buy-now"></use>
+        </svg>
+      </div>
+    </button>
+
+    <div class="mobile-menu__wrapper">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="index.html" class="mobile-menu__link">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">How it's made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Our products</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

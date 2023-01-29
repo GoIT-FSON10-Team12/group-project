@@ -1,0 +1,95 @@
+.mobile-menu__wrapper {
+  position: relative;
+  height: 100vh;
+
+  margin-top: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-color: $SectionFirstColor;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $MobileMenuBgColor;
+  z-index: 999;
+  text-align: center;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    &:last-child {
+      border-bottom: 1px solid $MobileMenuBorderColor;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.285;
+    text-decoration: none;
+    padding-left: 21px;
+    color: $TextSecondColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    border-top: 1px solid $MobileMenuBorderColor;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $TextFirstColor;
+    }
+  }
+}
+
+.button__arrow-icon {
+  stroke: $BtnPrimaryColor;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.js-close-menu {
+  width: 14px;
+  height: 14px;
+  background-color: $MobileMenuBgColor;
+  stroke: $TextSecondColor;
+  position: absolute;
+  top: 23px;
+  right: 21px;
+
+  &:hover,
+  &:focus {
+    stroke: $TextFirstColor;
+  }
+}
+
+// TABLET //
+@media screen and (min-width: 767px) {
+  .menu-toggle {
+    display: none;
+  }
+}

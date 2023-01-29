@@ -5,21 +5,35 @@
   margin: 0;
   padding: 0;
 }
-
+ul {
+  list-style: none;
+}
 // Czcionki dla dokumentu
 
- body {
-   font-family: $DefaultFontFamily;
+body {
+  font-family: $DefaultFontFamily;
   //  font-family: $SecondaryFontFamily;
 }
-
 
 img {
   display: block;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+section {
+  margin-bottom: 50px;
+  overflow: hidden;
+  // font-family: $DefaultFontFamily;
+  // font-family: $SecondaryFontFamily;
 }
-
+.container {
+  max-width: 480px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+ul {
+  list-style: none;
+}
