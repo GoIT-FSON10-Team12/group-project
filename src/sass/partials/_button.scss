@@ -1,3 +1,11 @@
+.button-wrapper {
+  width: 111.73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .button {
   &__buy {
     display: none;
@@ -20,6 +28,9 @@
       outline: none;
       transition: transform 0.2s;
     }
+  }
+&__label {
+    padding-left: 5px;
   }
   &__buy:hover {
     background-color: $BtnHoverColorPrimary;
@@ -91,6 +102,7 @@
     &--mobile-menu {
       width: 209px;
       height: 44px;
+      padding: 12px 48.64px;
       text-align: center;
       font-weight: 700;
       font-size: 16px;

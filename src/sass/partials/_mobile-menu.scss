@@ -35,7 +35,7 @@
     flex-direction: column;
     width: 100vw;
     &:last-child {
-      border-bottom: 1px solid #e18298;
+      border-bottom: 1px solid $MobileMenuBorderColor;
     }
   }
 
@@ -54,18 +54,37 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
-    border-top: 1px solid #e18298;
-  }
+    border-top: 1px solid $MobileMenuBorderColor;
 
-  &:active,
-  &:focus,
-  &:hover {
-    color: $BtnPrimaryColor;
+    &:active,
+    &:focus,
+    &:hover {
+      color: $TextFirstColor;
+    }
   }
+}
+
+.button__arrow-icon {
+  stroke: $BtnPrimaryColor;
 }
 
 .mobile-menu.is-open {
   transform: translateX(0);
+}
+
+.js-close-menu {
+  width: 14px;
+  height: 14px;
+  background-color: $MobileMenuBgColor;
+  stroke: $TextSecondColor;
+  position: absolute;
+  top: 23px;
+  right: 21px;
+
+  &:hover,
+  &:focus {
+    stroke: $TextFirstColor;
+  }
 }
 
 // TABLET //
@@ -73,14 +92,4 @@
   .menu-toggle {
     display: none;
   }
-}
-
-.js-close-menu {
-  width: 14px;
-  height: 14px;
-  background-color: $MobileMenuBgColor;
-  stroke: black;
-  position: absolute;
-  top: 23px;
-  right: 21px;
 }

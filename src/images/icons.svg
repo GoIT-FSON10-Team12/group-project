@@ -8,9 +8,9 @@
 </symbol>
 <symbol id="icon-burger" viewBox="0 0 46 32"><path fill="none"  stroke-width="2.286" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714" /></symbol>
 
-<symbol id="icon-buy-now" viewBox="0 0 26 32"><path fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="6.4" d="M3.542 3.2 20.367 16 3.542 28.8" style="stroke:var(--color1, #d41443)"/></symbol>
+<symbol id="icon-buy-now" viewBox="0 0 26 32"><path fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="6.4" d="M3.542 3.2 20.367 16 3.542 28.8"/></symbol>
 
-<symbol id="icon-mobile-close" viewBox="0 0 32 32"><path fill="none"  stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518" style="stroke:var(--color2, #fff)"/></symbol>
+<symbol id="icon-mobile-close" viewBox="0 0 32 32"><path fill="none"  stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518"/></symbol>
 </defs>
 
 </svg>
