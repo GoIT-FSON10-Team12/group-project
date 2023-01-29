@@ -24,9 +24,9 @@
         </ul>
       </nav>
     </div>
-    <button class="hero-header__hamburger" data-menu-open>
-      <svg class="hero-header__hamburger-icon" width="24" height="24">
-        <use href="/src/images/icons/icons.svg#mobile-menu-open-icon"></use>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="hero-header__hamburger-icon" width="24" height="12">
+        <use href="/src/images/icons.svg#icon-burger"></use>
       </svg>
     </button>
     <button type="button" class="button__buy">Buy now<span class="button__arrow"></span></button>
@@ -104,6 +104,36 @@
         sizes="(min-width: 768px) 168w, (min-width: 1200px) 293w, 100vw"
         class="hero-header__promo-girl-img"
       />
+    </div>
+  </div>
+
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="mobile-menu__icon">
+        <use width="14" height="14" href="./images/icons.svg#icon-mobile-close"></use>
+      </svg>
+    </button>
+    <button type="button" class="button__white button__white--mobile-menu">Buy now ></button>
+
+    <div class="mobile-menu__wrapper">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="index.html" class="mobile-menu__link">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">How it's made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Our products</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Contacts</a>
+        </li>
+      </ul>
     </div>
   </div>
 </header>

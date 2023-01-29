@@ -56,6 +56,13 @@
     color: $TextFirstColor;
     outline: none;
   }
+
+  &__hamburger-icon {
+    stroke: $TextFirstColor;
+    &:hover {
+      stroke: $TextSecondColor;
+    }
+  }
   &__hamburger {
     z-index: 1;
     margin-left: 62px;
