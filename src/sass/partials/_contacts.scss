@@ -1,15 +1,19 @@
 .contacts {
+  background-color: $SectionFifthSevenColor;
+  // font-family: $DefaultFontFamily;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  padding: 86px 0 113px 0;
-  background: linear-gradient(
-    to bottom,
-    $TextBtnSecondaryColor 0px,
-    $TextBtnSecondaryColor 170px,
-    $SectionFifthSevenColor 170px,
-    $SectionFifthSevenColor 0%
-  );
+
+  // jeśli użyjemy kodu poniżej padding-bottom: 29px; powinien wyrównać odległość do danych z projektu
+  padding-bottom: 29px;
+
+  // kod do przesunięcia elementów w górę - trzeba dodać do sekcji powyżej padding-bottom: 86px; żeby się nie nałożyło na siebie
+
+  // &__container-shift {
+  //   position: relative;
+  //   top: -84px;
+  // }
 
   &__wrapper {
     display: flex;
@@ -17,6 +21,7 @@
     align-items: center;
     gap: 20px;
     max-width: 480px;
+    padding: 0 50px;
     margin: 0 auto 54px;
   }
 
@@ -59,7 +64,6 @@
     display: block;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.04em;
     color: $TextBtnSecondaryColor;
     border-radius: 4px;
     max-width: 80px;
@@ -88,7 +92,7 @@
 
   &__hours {
     line-height: 186%;
-    color: $SectionSecondTextThirdColor;
+    color: $SectionSecondTextThirdColor r;
 
     &:nth-of-type(2) {
       margin-bottom: 10px;

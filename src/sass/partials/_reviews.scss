@@ -1,18 +1,10 @@
 @import 'colors';
 @import 'typography';
 
-
-.container {
-  margin: 0 auto;
-}
-
 .wrapper {
   margin: 0 auto;
-  padding: 80px 20px 0px 20px;
-  min-width: 320px;
-  max-width: 767px;
-  }
-
+  padding: 80px 0px 0px 0px;
+}
 
 .reviews {
   display: flex;
@@ -42,8 +34,8 @@
     background-image: repeating-linear-gradient(
       transparent 0px,
       transparent 29px,
-      $linearReviewColor 29px,
-      $linearReviewColor 30px
+      $SectionSixthLinearReviewColor 29px,
+      $SectionSixthLinearReviewColor 30px
     );
     display: block;
     position: relative;
@@ -97,7 +89,7 @@
     border-radius: 50%;
     background-color: $bgiconReviewColor;
     &--is-active {
-      background-color: $BtnSecondaryColor;
+      background-color: $TextBtnSecondaryColor;
     }
   }
   &__icon {

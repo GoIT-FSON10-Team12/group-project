@@ -1,177 +1,154 @@
-
-
 /* ................................  */
 
 .products {
-    // background-color: techniczny ;
-    // background-color: aliceblue;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  // background-color: techniczny ;
+  // background-color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* .contener {
     background-color: chartreuse;
 
  } */
 
-
 /* ......................................  */
 
 .products__title {
-    // background-color: techniczny ;
-    // background-color: azure;
-    margin-top: 120px;
-    text-transform: uppercase;
+  // background-color: techniczny ;
+  // background-color: azure;
+  margin-top: 120px;
+  text-transform: uppercase;
 
-    font-family: $SecondaryFontFamily;
-    // font titan 
-    font-weight: 400;
+  font-family: $SecondaryFontFamily;
+  // font titan
+  font-weight: 400;
 }
 
 .products__title-et {
-    // background-color: techniczny ;
-    // background-color: beige;
-    // color: rgba(255, 165, 186, 1);
-    color: $TextThirdColor;
-    font-size: 18px;
-
+  // background-color: techniczny ;
+  // background-color: beige;
+  // color: rgba(255, 165, 186, 1);
+  color: $SectionSecondTextThirdColor r;
+  font-size: 18px;
 }
 
 .products__title-head {
-    // background-color: techniczny ;
-    // background-color: blanchedalmond;
-    // color: rgba(212, 20, 67, 1);
-    color: $TextFirstColor;
-    font-size: 34px;
-
+  // background-color: techniczny ;
+  // background-color: blanchedalmond;
+  // color: rgba(212, 20, 67, 1);
+  color: $TextFirstBtnPrimaryColor;
+  font-size: 34px;
 }
-
-
 
 /* ..................................  */
 
-
-
-
 .products__card-div {
-    // color: rgba(255, 255, 255, 1);
-    color: $TextSecondColor;
-    margin-bottom: 98px;
+  // color: rgba(255, 255, 255, 1);
+  color: $TextBtnSecondaryColor;
+  margin-bottom: 98px;
 }
 .products__card-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .products__card-element {
-    margin-top: 130px;
-    position: relative;
-    width: 280px;
-    /* height: 485px; */
-    border-radius: 24px;
-    display: flex;
-    justify-content: center;
-
+  margin-top: 130px;
+  position: relative;
+  width: 280px;
+  /* height: 485px; */
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 /* .......................................  */
 
-
-
 .products__card-element--one {
-    /* background-color: aquamarine; */
-    // background-color: rgba(255, 184, 202, 1);
-    background-color: $SectionFirstColor;
+  /* background-color: aquamarine; */
+  // background-color: rgba(255, 184, 202, 1);
+  background-color: $SectionFirstColor;
 }
 
 .products__card-element--one::after {
-    content: url(../images/ice-strowberry-480.png);
-    position: absolute;
-    top: -113px;
-    left: 16px;
-
+  content: url(../images/ice-strowberry-480.png);
+  position: absolute;
+  top: -113px;
+  left: 16px;
 }
 
 .products__card-element--two {
-    /* background-color: aquamarine; */
-    // background-color: rgba(240, 209, 165, 1);
-    background-color: $SectionThirdColor;
+  /* background-color: aquamarine; */
+  // background-color: rgba(240, 209, 165, 1);
+  background-color: $SectionThirdColor;
 }
 
 .products__card-element--two::after {
-    content: url(../images/ice-vanilia-480.png);
-    position: absolute;
-    top: -113px;
-    left: 16px;
-
+  content: url(../images/ice-vanilia-480.png);
+  position: absolute;
+  top: -113px;
+  left: 16px;
 }
 
 .products__card-element--tre {
-    /* background-color: aquamarine; */
-    // background-color: rgba(194, 226, 151, 1);
-    background-color: $SectionFourthColor;
+  /* background-color: aquamarine; */
+  // background-color: rgba(194, 226, 151, 1);
+  background-color: $SectionFourthColor;
 }
 
 .products__card-element--tre::after {
-    content: url(../images/ice-chocolate-480.png);
-    position: absolute;
-    top: -113px;
-    left: 16px;
-
+  content: url(../images/ice-chocolate-480.png);
+  position: absolute;
+  top: -113px;
+  left: 16px;
 }
 
 /* ..............................................  */
 
-
-
 .products__card-cont {
-    // background-color: techniczny ;
-    // background-color: rgba(212, 20, 67, 0.1);
-    /* max-width na projekcie 200px */
-    max-width: 170px;
-    /* text-align: center; */
+  // background-color: techniczny ;
+  // background-color: rgba(212, 20, 67, 0.1);
+  /* max-width na projekcie 200px */
+  max-width: 170px;
+  /* text-align: center; */
 }
 
 .products__card-h3 {
-    position: relative;
-    margin-top: 161px;
-    text-transform: uppercase;
-    font-family: $SecondaryFontFamily;
-    font-weight: 400;
-    font-size: 20px;
+  position: relative;
+  margin-top: 161px;
+  text-transform: uppercase;
+  font-family: $SecondaryFontFamily;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .products__card-h3::after {
-    content: "...";
-    position: absolute;
-    bottom: -30px;
-    /* left: 90px; */
-    display: flex;
-    width: 100%;
-    justify-content: center;
-
-
+  content: '...';
+  position: absolute;
+  bottom: -30px;
+  /* left: 90px; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
-
 
 .products__card-p {
-    padding-top: 30px;
-    font-family: $DefaultFontFamily;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
+  padding-top: 30px;
+  font-family: $DefaultFontFamily;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-
 .products__card-img {
-    border-radius: 50%;
-    margin: 30px 0 41px 0;
+  border-radius: 50%;
+  margin: 30px 0 41px 0;
 }
 
 .products__card-img:hover {
-    border: 1px solid $TextFirstColor;
-    cursor: pointer;
+  border: 1px solid $TextFirstBtnPrimaryColor;
+  cursor: pointer;
 }
 
 /* ...............................  */
