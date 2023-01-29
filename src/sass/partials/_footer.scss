@@ -1,6 +1,6 @@
 .footer {
-  background-color: $SectionFifthColor;
-  border-bottom: 1px solid $SectionSixthColor;
+  background-color: $SectionFifthSevenColor;
+  border-bottom: 1px solid $SectionSixthLinearReviewColor;
 
   &__wrapper {
     max-width: 480px;
@@ -17,7 +17,7 @@
     &-head {
       font-size: 18px;
       line-height: 1.16;
-      color: $SectionSecondColor;
+      color: $SectionSecondTextThirdColor;
       margin-bottom: 17px;
     }
 
@@ -25,7 +25,7 @@
       font-size: 34px;
       line-height: 1.14;
       letter-spacing: 0.04em;
-      color: $TextFirstColor;
+      color: $TextFirstBtnPrimaryColor;
     }
   }
 
@@ -41,7 +41,7 @@
   }
 
   &__icon {
-    fill: $TextSecondColor;
+    fill: $TextBtnSecondaryColor;
     background-color: $IconBackgroundColor;
     border-radius: 50%;
     padding: 5px;
@@ -50,7 +50,7 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: $TextFirstColor;
+      background-color: $TextFirstBtnPrimaryColor;
     }
   }
 
@@ -61,13 +61,13 @@
     line-height: 186%;
 
     &-telephone {
-      color: $TextFirstColor;
+      color: $TextFirstBtnPrimaryColor;
     }
   }
 }
 
 .copyright {
-  background-color: $SectionFifthColor;
+  background-color: $SectionFifthSevenColor;
 
   &__wrapper {
     max-width: 480px;

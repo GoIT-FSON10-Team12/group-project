@@ -50,7 +50,7 @@
     line-height: 1.285;
     text-decoration: none;
     padding-left: 21px;
-    color: $TextSecondColor;
+    color: $TextBtnSecondaryColor;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
@@ -59,13 +59,13 @@
     &:active,
     &:focus,
     &:hover {
-      color: $TextFirstColor;
+      color: $TextFirstBtnPrimaryColor;
     }
   }
 }
 
 .button__arrow-icon {
-  stroke: $BtnPrimaryColor;
+  stroke: $TextFirstBtnPrimaryColor;
 }
 
 .mobile-menu.is-open {
@@ -76,14 +76,14 @@
   width: 14px;
   height: 14px;
   background-color: $MobileMenuBgColor;
-  stroke: $TextSecondColor;
+  stroke: $TextBtnSecondaryColor;
   position: absolute;
   top: 23px;
   right: 21px;
 
   &:hover,
   &:focus {
-    stroke: $TextFirstColor;
+    stroke: $TextFirstBtnPrimaryColor;
   }
 }
 

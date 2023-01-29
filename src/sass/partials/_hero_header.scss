@@ -49,18 +49,18 @@
     font-family: 'DM Sans';
     font-size: 16px;
     line-height: 1.31;
-    color: $TextSecondColor;
+    color: $TextBtnSecondaryColor;
   }
   &__nav-link:hover,
   &__nav-link:focus {
-    color: $TextFirstColor;
+    color: $TextFirstBtnPrimaryColor;
     outline: none;
   }
 
   &__hamburger-icon {
-    stroke: $TextFirstColor;
+    stroke: $TextFirstBtnPrimaryColor;
     &:hover {
-      stroke: $TextSecondColor;
+      stroke: $TextBtnSecondaryColor;
     }
   }
   &__hamburger {
@@ -110,7 +110,7 @@
     width: 346px;
     height: 344px;
     display: block;
-    background-color: $SectionSecondColor;
+    background-color: $SectionSecondTextThirdColor;
     border-radius: 50%;
     position: absolute;
     top: 90px;
@@ -191,7 +191,7 @@
       font-weight: 400;
       font-size: 8px;
       line-height: 150%;
-      color: $TextSecondColor;
+      color: $TextBtnSecondaryColor;
       flex-wrap: wrap;
       text-align: left;
     }
@@ -199,7 +199,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
-      color: $TextSecondColor;
+      color: $TextBtnSecondaryColor;
       flex-wrap: wrap;
       text-align: left;
       width: 200px;
