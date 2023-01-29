@@ -1,107 +1,107 @@
 @import 'colors';
 @import 'typography';
 
-
 .container {
   margin: 0 auto;
- }
+}
 .wrapper {
-    margin: 0 auto;
-    padding: 80px 20px 0px 20px;
-    min-width: 320px;
-    max-width: 767px;
+  margin: 0 auto;
+  padding: 80px 20px 0px 20px;
+  min-width: 320px;
+  max-width: 767px;
 }
 
 .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 280px;
+  &__image {
+    padding-bottom: 29px;
+  }
+  &__text-wraper {
+    display: block;
+    position: relative;
+    background-color: $bgreviewColor;
+    padding: 28px 50px 17px 50px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 16px;
+      left: 61px;
+      display: block;
+      background-image: url(../images/quote.png);
+      width: 54px;
+      height: 40px;
+    }
+  }
+  &__text {
+    background-image: repeating-linear-gradient(
+      transparent 0px,
+      transparent 29px,
+      $linearReviewColor 29px,
+      $linearReviewColor 30px
+    );
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 0px 16px 0px 7px;
+    font-family: $DefaultFontFamily;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.53;
+    text-align: center;
+  }
+
+  &__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    min-width: 280px;       
-    &__image {
-        padding-bottom: 29px;
-    }
-    &__text-wraper {
-        display: block;
-        position: relative;
-        background-color: $bgreviewColor;
-        padding: 28px 50px 17px 50px;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 16px;
-            left: 61px;
-            display: block;
-            background-image: url(../images/quote.png);
-            width: 54px;
-            height: 40px;
-            }}     
-    &__text {
-        background-image: repeating-linear-gradient(       
-            transparent 0px, transparent 29px, 
-            $linearReviewColor 29px, $linearReviewColor 30px,); 
-        display: block;
-        position: relative;
-        z-index: 1;
-        padding: 0px 16px 0px 7px;
-        font-family: $DefaultFontFamily;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 2.53;
-        text-align: center;
-         }
-    
-    &__list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    &__item::after {
-        content: "";
-        display: inline-block;
-        margin-top: 30px;
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: $BtnHoverColorSecondary;
-    } 
-    &__client-name {
-        font-family: $DefaultFontFamily;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.86;
-        padding-top: 18px;
-        text-align: center;
-        position: relative;
-       }
- }
-
- .pagination {
+    gap: 10px;
+  }
+  &__item::after {
+    content: '';
+    display: inline-block;
     margin-top: 30px;
-    &__list {
-        display: flex;
-        gap: 18px;
-        flex-direction: row;
-     }
-     &__item {
-        width: 12px;
-        height: 12px;
-        display: block;
-        border-radius: 50%;
-        background-color: $bgiconReviewColor;
-        &--is-active {
-            background-color: $BtnSecondaryColor;
-        }
-   }
-     &__icon {
-          fill: $iconReviewColor;
-          opacity: 0;
-          &--is-active{
-            opacity: 1;;
-            
-          }
-     }
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $BtnHoverColorSecondary;
+  }
+  &__client-name {
+    font-family: $DefaultFontFamily;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    padding-top: 18px;
+    text-align: center;
+    position: relative;
+  }
+}
 
+.pagination {
+  margin-top: 30px;
+  &__list {
+    display: flex;
+    gap: 18px;
+    flex-direction: row;
+  }
+  &__item {
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background-color: $bgiconReviewColor;
+    &--is-active {
+      background-color: $BtnSecondaryColor;
     }
- 
+  }
+  &__icon {
+    fill: $iconReviewColor;
+    opacity: 0;
+    &--is-active {
+      opacity: 1;
+    }
+  }
+}
