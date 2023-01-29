@@ -1,5 +1,5 @@
 .hero-header {
-  background-color: #ffb8ca;
+  background-color: $SectionFirstColor;
   overflow: hidden;
   position: relative;
   min-height: 502px;
@@ -23,7 +23,7 @@
     }
   }
   &__logo {
-    background-color: #ffb8ca;
+    background-color: $SectionFirstColor;
   }
   &__wrapper {
     display: none;
@@ -49,11 +49,11 @@
     font-family: 'DM Sans';
     font-size: 16px;
     line-height: 1.31;
-    color: #ffffff;
+    color: $TextSecondColor;
   }
   &__nav-link:hover,
   &__nav-link:focus {
-    color: #d41443;
+    color: $TextFirstColor;
     outline: none;
   }
   &__hamburger {
@@ -103,7 +103,7 @@
     width: 346px;
     height: 344px;
     display: block;
-    background-color: #ffa5ba;
+    background-color: $SectionSecondColor;
     border-radius: 50%;
     position: absolute;
     top: 90px;
@@ -184,7 +184,7 @@
       font-weight: 400;
       font-size: 8px;
       line-height: 150%;
-      color: #ffffff;
+      color: $TextSecondColor;
       flex-wrap: wrap;
       text-align: left;
     }
@@ -192,7 +192,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
-      color: #ffffff;
+      color: $TextSecondColor;
       flex-wrap: wrap;
       text-align: left;
       width: 200px;

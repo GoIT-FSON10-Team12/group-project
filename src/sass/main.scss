@@ -1,8 +1,12 @@
 @use './partials/mixins' as *;
+@use './partials/colors' as *;
 
+@import './partials/typography';
+@import './partials/globals';
+
+@import './partials/hero-header';
+@import './partials/title';
 @import './partials/typography.scss';
-@import './partials/colors';
-@import './partials/globals.scss';
 @import './partials/button';
 @import './partials/hero-header';
 @import './partials/products';

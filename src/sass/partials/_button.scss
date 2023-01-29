@@ -6,8 +6,8 @@
       margin-right: 34px;
       width: 160px;
       height: 44px;
-      background-color: #ffffff;
-      color: #d41443;
+      background-color: $TextSecondColor;
+      color: $TextFirstColor;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 22px;
       border: none;
@@ -22,7 +22,7 @@
     }
   }
   &__buy:hover {
-    background-color: #ecebeb;
+    background-color: $BtnHoverColorPrimary;
     transform: scale(1.05);
   }
   &__buy:hover > .button__arrow {
@@ -43,8 +43,8 @@
     border-radius: 20px;
     border: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: #d41443;
-    color: #ffffff;
+    background-color: $TextFirstColor;
+    color: $TextSecondColor;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -61,7 +61,7 @@
   }
   &__red:hover,
   &__red:focus {
-    background-color: #c7133e;
+    background-color: $BtnHoverColorSecondary;
     transform: scale(1.05);
     outline: none;
   }
@@ -71,8 +71,8 @@
     border-radius: 20px;
     border: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: #ffffff;
-    color: #d41443;
+    background-color: $TextSecondColor;
+    color: $TextFirstColor;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -89,7 +89,7 @@
   }
   &__white:hover,
   &__white:focus {
-    background-color: #ecebeb;
+    background-color: $BtnHoverColorPrimary;
     transform: scale(1.05);
     outline: none;
   }
@@ -113,8 +113,8 @@
   &__arrow {
     width: 6px;
     height: 6px;
-    border-right: 1px solid #d41443;
-    border-bottom: 1px solid #d41443;
+    border-right: 1px solid $BtnPrimaryColor;
+    border-bottom: 1px solid $BtnPrimaryColor;
     position: relative;
     transform: rotate(-45deg);
     margin: 0 6px;
@@ -122,14 +122,14 @@
     @include desktop {
       width: 8px;
       height: 8px;
-      border-right: 1px solid #d41443;
-      border-bottom: 1px solid #d41443;
+      border-right: 1px solid $BtnPrimaryColor;
+      border-bottom: 1px solid $BtnPrimaryColor;
       margin: 0 8px;
     }
   }
   &__arrow::before {
     display: block;
-    background-color: #d41443;
+    background-color: $BtnPrimaryColor;
     width: 3px;
     transform-origin: bottom right;
     height: 1px;
