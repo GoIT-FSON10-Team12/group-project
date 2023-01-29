@@ -1,10 +1,18 @@
 @use './partials/mixins' as *;
+@use './partials/colors' as *;
 
+@import './partials/typography';
+@import './partials/globals';
+
+@import './partials/hero-header';
+@import './partials/title';
 @import './partials/typography.scss';
 @import './partials/colors';
 @import './partials/globals.scss';
+
 @import './partials/button';
 @import './partials/hero-header';
+@import './partials/mobile-menu.scss';
 @import './partials/products';
 @import './partials/about.scss';
 @import './partials/advantages_v2.scss';
@@ -13,4 +21,9 @@
 @import './partials/reviews';
 @import './partials/footer';
 @import './partials/title';
+@import './partials/about.scss';
+@import './partials/gallery.scss';
+@import './partials/products.scss';
+// @import './partials/advantages.scss';
+@import './partials/advantages_v2.scss';
 

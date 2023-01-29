@@ -1,15 +1,18 @@
 @import 'colors';
 @import 'typography';
 
+
 .container {
   margin: 0 auto;
 }
+
 .wrapper {
   margin: 0 auto;
   padding: 80px 20px 0px 20px;
   min-width: 320px;
   max-width: 767px;
-}
+  }
+
 
 .reviews {
   display: flex;
