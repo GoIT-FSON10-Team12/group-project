@@ -30,23 +30,30 @@
    
    <main>
     <header>
-    <include src="./partials/hero_header.html"></include>
+      <include src="./partials/hero_header.html"></include>
     </header>
-    
+
     <main>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advantages_v2.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages_v2.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
     </main>
 
     <footer>
       <include src="./partials/footer.html"></include>
     </footer>
-    
+
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
