@@ -1,19 +1,5 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projekt grupowy_FSON 10 Grupa 12</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-  </head> -->
-
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,18 +22,23 @@
   </head>
 
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-   <include src="./partials/hero-header.html"></include>
-  <!-- <include src="./partials/products.html"></include> -->
-   <!-- <include src="./partials/about.html"></include> -->
-   <!-- <include src="./partials/advantages.html"></include> -->
-   <!-- <include src="./partials/gallery.html"></include> -->
-   <!-- <include src="./partials/customer-reviews.html"></include> -->
-   <!-- <include src="./partials/contacts.html"></include>
-
+    <header>
+    <include src="./partials/hero_header.html"></include>
+    </header>
+    
+    <main>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages_v2.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    </main>
+      
     <footer>
-     <!-- <include src="./partials/Footer.html"></include> -->
+      <include src="./partials/footer.html"></include>
     </footer>
+    
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
   </body>

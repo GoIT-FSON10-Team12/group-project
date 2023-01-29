@@ -1,4 +1,4 @@
-// Usunięcie styli przeglądarki
+// // Usunięcie styli przeglądarki
 * {
   text-decoration: none;
   color: inherit;
@@ -11,6 +11,16 @@ ul {
 // Czcionki dla dokumentu
 
 body {
+  font-family: $DefaultFontFamily;
+  //  font-family: $SecondaryFontFamily;
+}
+
+img {
+  display: block;
+}
+
+section {
+  margin-bottom: 50px;
   overflow: hidden;
   // font-family: $DefaultFontFamily;
   // font-family: $SecondaryFontFamily;
@@ -23,4 +33,7 @@ body {
   @include desktop {
     max-width: 1280px;
   }
+}
+ul {
+  list-style: none;
 }
