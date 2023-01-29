@@ -6,9 +6,9 @@
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
 @use './partials/mixins' as *;
+@use './partials/colors' as *;
 @import './partials/typography';
 @import './partials/globals';
 @import './partials/hero-header';
 @import './partials/title';
-@import './partials/colors';
 @import './partials/button';
