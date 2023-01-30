@@ -22,6 +22,7 @@ img {
     max-width: 768px;
   }
   @include desktop {
+    min-width: 1200px;
     max-width: 1280px;
   }
 }
