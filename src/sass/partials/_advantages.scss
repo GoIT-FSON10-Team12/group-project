@@ -1,23 +1,48 @@
-p,
-ul,
-section {
-  margin: 0;
-  padding: 0;
-}
-
 .advantages {
-  background-color: #fff5f6;
+  background-color: $SectionFifthSevenColor;
+  padding-top: 29px;
+  padding-bottom: 97px;
+
+  @include tablet {
+    padding-top: 56px;
+    padding-bottom: 140px;
+  }
+
+  @include desktop {
+    padding-top: 39px;
+    padding-bottom: 139px;
+  }
 }
 
-.wrapper {
+.wrapper-advantages {
   max-width: 440px;
   margin: 0 auto;
+
+  @include tablet {
+    max-width: 772px;
+    margin: 0;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    margin: auto;
+  }
 }
 
-.container {
+.container-advantages {
   max-width: 480px;
   padding: 0 20px;
   margin: auto;
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 36px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    padding: 0 115px;
+  }
 }
 
 .header-advantages {
@@ -30,18 +55,42 @@ section {
   flex-direction: column;
   padding-right: 50px;
 
-  &__item {
+  @include tablet {
+    flex-direction: row;
+    gap: 60px;
+    padding-right: 0;
+  }
+  @include desktop {
+    gap: 30px;
+    padding-right: 0;
+  }
+
+  &__item:not(:last-of-type) {
     padding-bottom: 38px;
+
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 
   &__number {
-    font-family: 'Titan One';
+    font-family: $SecondaryFontFamily;
     font-weight: 400;
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: $TextFirstBtnPrimaryColor;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.15;
+    }
+
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.14;
+    }
 
     &--icon-first::before {
       content: '';
@@ -50,6 +99,13 @@ section {
       background-image: url(../images/icon1.png);
       display: block;
       margin-bottom: 16px;
+
+      @include tablet {
+        margin-bottom: 36px;
+      }
+      @include desktop {
+        margin-bottom: 40px;
+      }
     }
 
     &--icon-second::before {
@@ -59,6 +115,13 @@ section {
       background-image: url(../images/icon2.png);
       display: block;
       margin-bottom: 16px;
+
+      @include tablet {
+        margin-bottom: 36px;
+      }
+      @include desktop {
+        margin-bottom: 40px;
+      }
     }
 
     &--icon-third::before {
@@ -68,13 +131,30 @@ section {
       background-image: url(../images/icon3.png);
       display: block;
       margin-bottom: 16px;
+
+      @include tablet {
+        margin-bottom: 36px;
+      }
+      @include desktop {
+        margin-bottom: 40px;
+      }
     }
   }
 
   &__paragraph {
     font-weight: 700;
     font-size: 12px;
-    line-height: 170%;
+    line-height: 1.67;
     color: #000000;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+    }
   }
 }
