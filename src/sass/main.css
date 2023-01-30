@@ -928,6 +928,95 @@ img {
 }
 
 /* ...............................  */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .products__card-list {
+    margin-top: 150px;
+    gap: 20px;
+  }
+  .products__title-et {
+    font-size: 26px;
+  }
+  .products__title-head {
+    font-size: 48px;
+  }
+  .products__card-element {
+    width: 220px;
+    margin-top: 0;
+  }
+  .products__card-cont {
+    width: 200px;
+  }
+  .products__card-list {
+    display: flex;
+  }
+  .products__card-img {
+    margin: 40px 0 40px 0;
+  }
+  .products__card-element--one::after {
+    content: url(../images/ice-strowberry-768.png);
+    top: -111px;
+    left: 0px;
+  }
+  .products__card-element--two::after {
+    content: url(../images/ice-vanilia-768.png);
+    top: -111px;
+    left: 0px;
+  }
+  .products__card-element--tre::after {
+    content: url(../images/ice-chocolate-768.png);
+    top: -111px;
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .products__card-list {
+    gap: 30px;
+    margin-top: 260px;
+  }
+  .products__title-et {
+    font-size: 30px;
+  }
+  .products__title-head {
+    font-size: 58px;
+  }
+  .products__card-element {
+    width: 330px;
+    margin-top: 0;
+  }
+  .products__card-cont {
+    max-width: 241px;
+  }
+  .products__card-h3 {
+    font-size: 30px;
+  }
+  .products__card-p {
+    font-size: 16px;
+  }
+  .products__card-img {
+    margin: 62x 0 50px 0;
+  }
+  .products__card-element--one::after {
+    content: url(../images/ice-strowberry-1200.png);
+    top: -210px;
+    left: 2px;
+  }
+  .products__card-element--two::after {
+    content: url(../images/ice-vanilia-1200.png);
+    top: -210px;
+    left: 2px;
+  }
+  .products__card-element--tre::after {
+    content: url(../images/ice-chocolate-1200.png);
+    top: -210px;
+    left: 2px;
+  }
+}
 .about {
   padding: 125px 20px 10px;
   background-color: #fff5f6;
