@@ -1,21 +1,6 @@
-$fontPrimary: 'DM Sans', sans-serif;
-$fontSecondary: 'Titan One', cursive;
-$tablet: 768px;
-$mobile: 1280px;
-
-// Tu wrzucam globalny reset i czcinki
-// Nie chcę tego łączyć, bo to tylko chwilowe rozwiązanie
-// Jak będzie to wrzucone w globalsy to usunę
 .about {
-  font-family: $fontPrimary;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-}
-
-.about {
-  padding: 125px 20px 0;
-  background-color: #fff5f6;
+  padding: 125px 20px 10px;
+  background-color: $SectionFifthSevenColor;
   background-image: url(../images/sectionbg1.png);
   background-repeat: no-repeat;
   background-position: bottom 61px right;
@@ -24,7 +9,6 @@ $mobile: 1280px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 440px;
     margin: 0 auto;
     gap: 26px;
   }
@@ -35,7 +19,7 @@ $mobile: 1280px;
     gap: 15px;
   }
   &__header {
-    font-family: $fontSecondary;
+    font-family: $SecondaryFontFamily;
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -44,12 +28,12 @@ $mobile: 1280px;
       font-size: 34px;
       line-height: 1.15;
       letter-spacing: 0.04em;
-      color: #d41443;
+      color: $TextFirstBtnPrimaryColor;
     }
     &--secondary {
       font-size: 18px;
       line-height: 1.17;
-      color: #ffa5ba;
+      color: $SectionSecondTextThirdColor;
     }
   }
   &__content-wrapper {
@@ -70,12 +54,10 @@ $mobile: 1280px;
   }
   &__description {
     font-size: 12px;
+    font-weight: 500;
     line-height: 1.62;
-    &--primary {
-      color: #000000;
-    }
     &--secondary {
-      color: #907e82;
+      color: $TextFourthColor;
     }
   }
   &__button {
@@ -83,9 +65,9 @@ $mobile: 1280px;
     height: 44px;
     border-radius: 22px;
     border: none;
-    background-color: #ffffff;
-    color: #d41443;
-    align-self: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: $TextBtnSecondaryColor;
+    color: $TextFirstBtnPrimaryColor;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
@@ -93,15 +75,23 @@ $mobile: 1280px;
     gap: 13.62px;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    &:hover,
+    &:focus {
+      background-color: $BtnHoverColorPrimary;
+      transform: scale(1.05);
+      outline: none;
+    }
   }
 }
 
 @media screen and (min-width: $tablet) {
   .about {
-    padding: 130px 36px 0;
+    padding: 130px 36px 10px;
     background-image: none;
     &__wrapper {
-      max-width: 696px;
       gap: 50px;
     }
     &__header-wrapper {
@@ -151,7 +141,6 @@ $mobile: 1280px;
     background-position: top 342px right;
     background-size: 100% 534px;
     &__wrapper {
-      max-width: 1051px;
       gap: 55px;
     }
     &__header-wrapper {

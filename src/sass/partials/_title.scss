@@ -5,7 +5,7 @@
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: $TextBtnSecondaryColor;
     @include tablet {
       font-size: 22px;
       line-height: 1.14;
@@ -23,7 +23,7 @@
     font-size: 48px;
     line-height: 0.95;
     letter-spacing: 0.04em;
-    color: #d41443;
+    color: $TextFirstBtnPrimaryColor;
     text-transform: uppercase;
     @include tablet {
       font-size: 34px;
@@ -46,7 +46,7 @@
       display: block;
       width: 16px;
       height: 16px;
-      background-color: #ffffff;
+      background-color: $TextBtnSecondaryColor;
       border-radius: 50%;
       z-index: -1;
       transform: translate(130%, -25%);
@@ -64,7 +64,7 @@
       font-size: 28px;
       line-height: 1.14;
       letter-spacing: 0.04em;
-      color: #d41443;
+      color: $TextFirstBtnPrimaryColor;
     }
     @include desktop {
       font-size: 46px;
@@ -80,7 +80,7 @@
       font-weight: 400;
       font-size: 8px;
       line-height: 1.25;
-      color: #ffffff;
+      color: $TextBtnSecondaryColor;
     }
     @include desktop {
       font-size: 14px;

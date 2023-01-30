@@ -1,30 +1,18 @@
-// // Usunięcie styli przeglądarki
 * {
   text-decoration: none;
   color: inherit;
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
-}
-// Czcionki dla dokumentu
-
-body {
-  font-family: $DefaultFontFamily;
-  //  font-family: $SecondaryFontFamily;
 }
 
 img {
   display: block;
 }
 
-section {
-  margin-bottom: 50px;
-  overflow: hidden;
-  // font-family: $DefaultFontFamily;
-  // font-family: $SecondaryFontFamily;
-}
 .container {
   max-width: 480px;
   @include tablet {
@@ -33,7 +21,4 @@ section {
   @include desktop {
     max-width: 1280px;
   }
-}
-ul {
-  list-style: none;
 }
