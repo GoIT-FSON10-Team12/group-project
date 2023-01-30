@@ -5,21 +5,26 @@
   min-height: 502px;
   @include tablet {
     min-height: 399px;
-    @include desktop {
-      min-height: 665px;
-    }
   }
+  @include desktop {
+    min-height: 665px;
+  }
+
   &__container {
     display: flex;
     padding-top: 6px;
     padding-left: 20px;
     align-items: center;
+    max-width: 480px;
     @include tablet {
       padding-top: 37px;
       padding-left: 34px;
+      max-width: 768px;
+      justify-content: space-between;
     }
     @include desktop {
       padding-left: 46px;
+      max-width: 1280px;
     }
   }
   &__logo {
@@ -75,15 +80,20 @@
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    max-width: 480px;
     @include tablet {
       margin-top: 15px;
-      margin-left: 34px;
-      margin-right: 34px;
+      margin-left: 0;
+      // margin-left: 34px;
+      // margin-right: 34px;
+      padding: 0 34px 0 34px;
+      max-width: 768px;
     }
     @include desktop {
       margin-top: 84px;
-      margin-left: 115px;
+      padding-left: 115px;
       margin-right: 97px;
+      max-width: 1200px;
     }
   }
   &__title-button {

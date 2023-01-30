@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
@@ -12,3 +13,23 @@
 @import './partials/hero-header';
 @import './partials/title';
 @import './partials/button';
+=======
+@use './partials/mixins' as *;
+
+@import './partials/colors.scss';
+@import './partials/typography.scss';
+@import './partials/globals.scss';
+@import './partials/button.scss';
+@import './partials/mobile-menu.scss';
+
+@import './partials/title.scss';
+@import './partials/hero_header.scss';
+@import './partials/contacts.scss';
+@import './partials/products.scss';
+@import './partials/products-media.scss';
+@import './partials/about.scss';
+@import './partials/advantages.scss';
+@import './partials/gallery.scss';
+@import './partials/reviews.scss';
+@import './partials/footer.scss';
+>>>>>>> Stashed changes
