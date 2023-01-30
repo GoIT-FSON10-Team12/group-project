@@ -1,3 +1,11 @@
+.button-wrapper {
+  width: 111.73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .button {
   &__buy {
     display: none;
@@ -225,3 +233,4 @@
     }
   }
 }
+
