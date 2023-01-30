@@ -1,34 +1,90 @@
 @import 'colors';
 @import 'typography';
 
+.container-reviews{
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  @include tablet {
+    min-width: 768px;
+    padding: 0px 74px;
+  }
+  @include desktop {
+    min-width: 1280px;
+    padding: 0px 176px 0px 178px ;
+  }
 
+}
 .wrapper-reviews {
     margin: 0 auto;
-    padding: 80px 0px 0px 0px;}
+    padding: 80px 0px 0px 0px;
+    @include tablet {
+    padding: 121px 0px 0px 0px;
+    }
+    @include desktop {
+      padding: 123px 0px 0px 0px;
+    }
+  }
     
 .reviews {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 280px;
+  @include tablet {
+    min-width: 620px;
+  }
+  @include desktop {
+    min-width: 926px;
+  }
   &__image {
     padding-bottom: 29px;
+    @include tablet {
+      padding-bottom: 19px;
+    }
+    @include desktop {
+      padding-bottom: 15px;
+    }
   }
   &__text-wraper {
     display: block;
     position: relative;
     background-color: $bgreviewColor;
-    padding: 28px 50px 17px 50px;
+    padding: 43px 50px 20px 50px;
+    @include tablet {
+    padding: 47px 36px 28px 60px;}
+    @include desktop {
+    padding: 47px 54px 32px 59px;}
     &::before {
       content: '';
       position: absolute;
-      top: 16px;
+      top: 28px;
       left: 61px;
       display: block;
       background-image: url(../images/quote.png);
       width: 54px;
       height: 40px;
+      @include tablet {  
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        display: block;
+        background-image: url(../images/quote.png);
+        width: 54px;
+        height: 40px;
+      }
+      @include desktop {content: '';
+        position: absolute;
+        top: 32px;
+        left: 50px;
+        display: block;
+        background-image: url(../images/quote.png);
+        width: 54px;
+        height: 40px;
+      }
     }
+ 
   }
   &__text {
     background-image: repeating-linear-gradient(
@@ -44,8 +100,26 @@
     font-family: $DefaultFontFamily;
     font-weight: 500;
     font-size: 12px;
-    line-height: 2.53;
+    line-height: 2.55;
     text-align: center;
+    @include tablet {
+      padding: 0px 44px 0px 20px;
+      font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;;
+    }
+    @include desktop {
+      padding: 0px 35px 0px 28px;
+      font-size: 16px;
+      line-height: 1.86;
+      letter-spacing: 0.04em;;
+      background-image: repeating-linear-gradient(
+        transparent 0px,
+        transparent 28px,
+        $SectionSixthLinearReviewColor 28px,
+        $SectionSixthLinearReviewColor 29px
+      );
+      }
   }
 
   &__list {
@@ -53,6 +127,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    line-height: 1;
     gap: 10px;
   }
   &__item::after {
@@ -63,6 +138,10 @@
     height: 4px;
     border-radius: 50%;
     background-color: $BtnHoverColorSecondary;
+    @include tablet {
+    margin-top: 24px;}
+    @include desktop { 
+    margin-top: 10px;}
   }
   &__client-name {
     font-family: $DefaultFontFamily;
@@ -72,11 +151,27 @@
     padding-top: 18px;
     text-align: center;
     position: relative;
+    @include tablet {
+    font-size: 16px;
+    padding-top: 14px;
+    line-height: 1.56;
+    }
+    @include desktop { 
+    font-size: 20px;
+    padding-top: 15px;
+    line-height: 1.55;
+    }
   }
 }
 
 .pagination {
   margin-top: 30px;
+  @include tablet {
+  margin-top: 35px;
+    }
+  @include desktop { 
+  margin-top: 35px;
+    }
   &__list {
     display: flex;
     gap: 18px;
