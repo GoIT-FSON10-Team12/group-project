@@ -6,6 +6,18 @@
     max-width: 480px;
     margin: 0 auto;
     padding: 0 20px 43px 20px;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 36px;
+      max-width: 768px;
+    }
+
+    @include desktop {
+      max-width: 1280px;
+      padding: 0 115px;
+    }
   }
 
   &__title {
@@ -13,12 +25,32 @@
     max-width: 234px;
     margin-bottom: 43px;
 
+    @include tablet {
+      margin: 10px 0 91px 0;
+      max-width: 340px;
+    }
+
+    @include desktop {
+      max-width: 479px;
+      margin: 0 0 97px 0;
+    }
+
     &-head {
       font-family: $SecondaryFontFamily;
       font-size: 18px;
       line-height: 1.16;
       color: $SectionSecondTextThirdColor;
       margin-bottom: 17px;
+
+      @include tablet {
+        font-size: 26px;
+        letter-spacing: 0.04em;
+      }
+
+      @include desktop {
+        font-size: 30px;
+        line-height: 1.13;
+      }
     }
 
     &-text {
@@ -27,15 +59,29 @@
       line-height: 1.14;
       letter-spacing: 0.04em;
       color: $TextFirstBtnPrimaryColor;
+
+      @include tablet {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+      }
+
+      @include desktop {
+        font-size: 58px;
+        line-height: 1.13;
+        letter-spacing: 0.06em;
+      }
     }
   }
 
   &__icons-container {
     margin-bottom: 46px;
+
+    @include desktop {
+      margin-bottom: 50px;
+    }
   }
 
   &__icons {
-    list-style: none;
     display: flex;
     justify-content: flex-end;
     gap: 28.24px;
@@ -61,6 +107,15 @@
     font-size: 12px;
     line-height: 186%;
 
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
     &-telephone {
       color: $TextFirstBtnPrimaryColor;
     }
@@ -79,5 +134,17 @@
     font-size: 14px;
     line-height: 152%;
     color: $TextFourthColor;
+    max-width: 170px;
+
+    @include tablet {
+      max-width: 768px;
+      padding: 29px 0 18px 0;
+      letter-spacing: 0.02em;
+      line-height: 186%;
+    }
+
+    @include desktop {
+      padding: 9px 0 10px 0;
+    }
   }
 }

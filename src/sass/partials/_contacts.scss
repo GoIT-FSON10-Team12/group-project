@@ -11,6 +11,31 @@
     $SectionFifthSevenColor 0%
   );
 
+  @include tablet {
+    font-size: 14px;
+    line-height: 186%;
+    padding: 119px 0 158px 0;
+    background: linear-gradient(
+      to bottom,
+      $TextBtnSecondaryColor 0px,
+      $TextBtnSecondaryColor 197px,
+      $SectionFifthSevenColor 197px,
+      $SectionFifthSevenColor 0%
+    );
+
+    @include desktop {
+      font-size: 16px;
+      padding: 132px 0 165px 0;
+      background: linear-gradient(
+        to bottom,
+        $TextBtnSecondaryColor 0px,
+        $TextBtnSecondaryColor 234px,
+        $SectionFifthSevenColor 234px,
+        $SectionFifthSevenColor 0%
+      );
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -18,6 +43,29 @@
     gap: 20px;
     max-width: 480px;
     margin: 0 auto 54px;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      max-width: 768px;
+      margin-bottom: 81px;
+    }
+
+    @include desktop {
+      max-width: 1280px;
+      margin-bottom: 86px;
+      gap: 31px;
+    }
+  }
+
+  &__splash {
+    display: none;
+
+    @include desktop {
+      display: block;
+      position: absolute;
+      max-width: 1280px;
+    }
   }
 
   &__title {
@@ -29,17 +77,33 @@
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     max-width: 220px;
+
+    @include desktop {
+      max-width: 330px;
+    }
   }
 
   &__list {
     padding: 43px 20px;
 
-    &-container {
-      list-style: none;
+    @include tablet {
+      padding: 50px 32px;
+    }
+
+    @include desktop {
+      padding: 51px 43px;
     }
 
     &-element {
       padding: 25px 0;
+
+      @include tablet {
+        padding: 30px 0;
+      }
+
+      @include desktop {
+        padding: 32px 0;
+      }
 
       &:first-child {
         padding-top: 0;
@@ -67,6 +131,18 @@
     margin-bottom: 25px;
     background-color: $SectionThirdColor;
 
+    @include tablet {
+      font-size: 16px;
+      height: 28px;
+      line-height: 186%;
+      margin-bottom: 30px;
+      border-radius: 6px;
+    }
+
+    @include desktop {
+      margin-bottom: 32px;
+    }
+
     &--color {
       background-color: $SectionFourthColor;
       max-width: 140px;
@@ -77,8 +153,24 @@
     letter-spacing: 0.04em;
     margin-bottom: 10px;
 
+    @include tablet {
+      margin-bottom: 14px;
+    }
+
+    @include desktop {
+      margin-bottom: 10px;
+    }
+
     &-desc {
       color: $TextFourthColor;
+
+      @include tablet {
+        line-height: 166%;
+      }
+
+      @include desktop {
+        line-height: 183%;
+      }
     }
   }
 
@@ -92,6 +184,14 @@
 
     &:nth-of-type(2) {
       margin-bottom: 10px;
+
+      @include tablet {
+        margin-bottom: 16px;
+      }
+
+      @include desktop {
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -104,6 +204,12 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      gap: 14px;
+    }
   }
 
   &__button {
@@ -115,6 +221,14 @@
     width: 161px;
     height: 44px;
 
+    @include tablet {
+      width: 191px;
+    }
+
+    @include desktop {
+      width: 198px;
+    }
+
     &--main {
       color: $TextBtnSecondaryColor;
       background-color: $BtnThirdColor;
@@ -123,6 +237,14 @@
     &--second {
       color: $TextFirstBtnPrimaryColor;
       background-color: $TextBtnSecondaryColor;
+
+      @include tablet {
+        width: 174px;
+      }
+
+      @include desktop {
+        width: 180px;
+      }
 
       &:hover,
       &:active,
@@ -137,6 +259,10 @@
 
     &-pointer {
       margin-left: 8px;
+
+      @include tablet {
+        margin-left: 13px;
+      }
     }
   }
 }
