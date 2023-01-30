@@ -1,11 +1,11 @@
 .about {
-  padding: 125px 20px 10px;
   background-color: $SectionFifthSevenColor;
   background-image: url(../images/sectionbg1.png);
   background-repeat: no-repeat;
   background-position: bottom 61px right;
   background-size: 100% 133px;
   &__wrapper {
+    padding: 125px 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,9 +89,9 @@
 
 @media screen and (min-width: $tablet) {
   .about {
-    padding: 130px 36px 10px;
     background-image: none;
     &__wrapper {
+      padding: 130px 36px 10px;
       gap: 50px;
     }
     &__header-wrapper {
@@ -135,12 +135,12 @@
 
 @media screen and (min-width: $desktop) {
   .about {
-    padding: 125px 117px 0 112px;
     background-image: url(../images/desktop-sectionbg1.png);
     background-repeat: no-repeat;
     background-position: top 342px right;
     background-size: 100% 534px;
     &__wrapper {
+      padding: 125px 117px 0 112px;
       gap: 55px;
     }
     &__header-wrapper {
