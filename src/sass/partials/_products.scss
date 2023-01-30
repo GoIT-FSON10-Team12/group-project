@@ -8,10 +8,12 @@
   justify-content: center;
   align-items: center;
 }
-/* .contener {
-    background-color: chartreuse;
+.contener {
+    // background-color: chartreuse;
+    max-width: 480px;
 
- } */
+
+ }
 
 /* ......................................  */
 
@@ -30,7 +32,7 @@
   // background-color: techniczny ;
   // background-color: beige;
   // color: rgba(255, 165, 186, 1);
-  color: $SectionSecondTextThirdColor r;
+  color: $SectionSecondTextThirdColor;
   font-size: 18px;
 }
 
@@ -52,6 +54,7 @@
 .products__card-list {
   list-style: none;
   padding: 0;
+  margin-top: 141px;
 }
 .products__card-element {
   margin-top: 130px;
@@ -110,7 +113,8 @@
   // background-color: techniczny ;
   // background-color: rgba(212, 20, 67, 0.1);
   /* max-width na projekcie 200px */
-  max-width: 170px;
+    width: 185px;
+    max-width: 200px;
   /* text-align: center; */
 }
 
@@ -121,6 +125,7 @@
   font-family: $SecondaryFontFamily;
   font-weight: 400;
   font-size: 20px;
+  line-height: 1.1;
 }
 
 .products__card-h3::after {
@@ -138,7 +143,7 @@
   font-family: $DefaultFontFamily;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.52;
 }
 
 .products__card-img {
@@ -152,3 +157,5 @@
 }
 
 /* ...............................  */
+
+// ............................. 
