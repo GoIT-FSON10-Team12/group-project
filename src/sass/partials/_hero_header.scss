@@ -142,9 +142,9 @@
     @include desktop {
       width: 538px;
       height: 538px;
-      top: -315px;
+      top: -317px;
       // left: 475px;
-      right: 267px;
+      right: 243px;
       z-index: 0;
     }
   }
@@ -171,7 +171,37 @@
   &__promo {
     position: relative;
     display: flex;
-    gap: 30px;
+    // gap: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // @include tablet {
+    //   min-width: 768px;
+    //   max-width: 1279px;
+    // }
+    // @include desktop {
+    //   max-width: 1280px;
+    // }
+  }
+  &__promo-left {
+    position: relative;
+    display: flex;
+    gap: 10px;
+  }
+  &__promo-right {
+    position: relative;
+    gap: 10px;
+    // top: -118px;
+    right: -145px;
+    @include tablet {
+      right: 5px;
+      top: -70px;
+    }
+    @include desktop {
+      right: -10px;
+      top: -116px;
+    }
   }
   &__promo-box {
     display: none;
