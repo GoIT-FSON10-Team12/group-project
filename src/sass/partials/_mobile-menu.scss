@@ -104,4 +104,12 @@
   right: 0;
   width: 254px;
 }
+  
+// DESKTOP //
+  @media screen and (min-width: 1280px) {
+  .menu-toggle {
+ display: none;
+  }
+}
+
 
