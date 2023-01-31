@@ -1,7 +1,7 @@
 @import 'colors';
 @import 'typography';
 
-.container-reviews{
+.container-reviews {
   min-width: 320px;
   margin: 0 auto;
   padding: 0px 20px;
@@ -11,21 +11,20 @@
   }
   @include desktop {
     min-width: 1280px;
-    padding: 0px 176px 0px 178px ;
+    padding: 0px 176px 0px 178px;
   }
-
 }
 .wrapper-reviews {
-    margin: 0 auto;
-    padding: 80px 0px 0px 0px;
-    @include tablet {
+  margin: 0 auto;
+  padding: 80px 0px 0px 0px;
+  @include tablet {
     padding: 121px 0px 0px 0px;
-    }
-    @include desktop {
-      padding: 123px 0px 0px 0px;
-    }
   }
-    
+  @include desktop {
+    padding: 123px 0px 0px 0px;
+  }
+}
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -52,9 +51,11 @@
     background-color: $bgreviewColor;
     padding: 43px 50px 20px 50px;
     @include tablet {
-    padding: 47px 36px 28px 60px;}
+      padding: 47px 36px 28px 60px;
+    }
     @include desktop {
-    padding: 47px 54px 32px 59px;}
+      padding: 47px 54px 32px 59px;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -64,7 +65,7 @@
       background-image: url(../images/quote.png);
       width: 54px;
       height: 40px;
-      @include tablet {  
+      @include tablet {
         content: '';
         position: absolute;
         top: 30px;
@@ -74,7 +75,8 @@
         width: 54px;
         height: 40px;
       }
-      @include desktop {content: '';
+      @include desktop {
+        content: '';
         position: absolute;
         top: 32px;
         left: 50px;
@@ -84,7 +86,6 @@
         height: 40px;
       }
     }
- 
   }
   &__text {
     background-image: repeating-linear-gradient(
@@ -105,21 +106,21 @@
     @include tablet {
       padding: 0px 44px 0px 20px;
       font-size: 14px;
-    line-height: 2.16;
-    letter-spacing: 0.04em;;
+      line-height: 2.16;
+      letter-spacing: 0.04em;
     }
     @include desktop {
       padding: 0px 35px 0px 28px;
       font-size: 16px;
       line-height: 1.86;
-      letter-spacing: 0.04em;;
+      letter-spacing: 0.04em;
       background-image: repeating-linear-gradient(
         transparent 0px,
         transparent 28px,
         $SectionSixthLinearReviewColor 28px,
         $SectionSixthLinearReviewColor 29px
       );
-      }
+    }
   }
 
   &__list {
@@ -139,9 +140,11 @@
     border-radius: 50%;
     background-color: $BtnHoverColorSecondary;
     @include tablet {
-    margin-top: 24px;}
-    @include desktop { 
-    margin-top: 10px;}
+      margin-top: 24px;
+    }
+    @include desktop {
+      margin-top: 10px;
+    }
   }
   &__client-name {
     font-family: $DefaultFontFamily;
@@ -152,46 +155,76 @@
     text-align: center;
     position: relative;
     @include tablet {
-    font-size: 16px;
-    padding-top: 14px;
-    line-height: 1.56;
+      font-size: 16px;
+      padding-top: 14px;
+      line-height: 1.56;
     }
-    @include desktop { 
-    font-size: 20px;
-    padding-top: 15px;
-    line-height: 1.55;
+    @include desktop {
+      font-size: 20px;
+      padding-top: 15px;
+      line-height: 1.55;
     }
   }
 }
 
-.pagination {
-  margin-top: 30px;
+// .pagination {
+//   margin-top: 30px;
+//   @include tablet {
+//     margin-top: 35px;
+//   }
+//   @include desktop {
+//     margin-top: 35px;
+//   }
+//   &__list {
+//     display: flex;
+//     gap: 18px;
+//     flex-direction: row;
+//   }
+//   &__item {
+//     width: 12px;
+//     height: 12px;
+//     display: block;
+//     border-radius: 50%;
+//     background-color: $bgiconReviewColor;
+//     &--is-active {
+//       background-color: $TextBtnSecondaryColor;
+//     }
+//   }
+//   &__icon {
+//     fill: $iconReviewColor;
+//     opacity: 0;
+//     &--is-active {
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// Slider
+
+.swiper-slide {
+  margin-bottom: 48px;
   @include tablet {
-  margin-top: 35px;
-    }
-  @include desktop { 
-  margin-top: 35px;
-    }
-  &__list {
-    display: flex;
-    gap: 18px;
-    flex-direction: row;
+    margin-bottom: 53px;
   }
-  &__item {
-    width: 12px;
-    height: 12px;
-    display: block;
-    border-radius: 50%;
-    background-color: $bgiconReviewColor;
-    &--is-active {
-      background-color: $TextBtnSecondaryColor;
-    }
-  }
-  &__icon {
-    fill: $iconReviewColor;
-    opacity: 0;
-    &--is-active {
-      opacity: 1;
-    }
-  }
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-image: url('../images/icons/bullet-active.svg');
+  background-size: 12px 12px;
+  background-color: transparent;
+  border-radius: 0;
+  background-repeat: no-repeat;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  position: relative;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
 }
