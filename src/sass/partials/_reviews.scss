@@ -2,15 +2,15 @@
 @import 'typography';
 
 .container-reviews {
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0px 20px;
   @include tablet {
-    min-width: 768px;
+    max-width: 768px;
     padding: 0px 74px;
   }
   @include desktop {
-    min-width: 1280px;
+    max-width: 1280px;
     padding: 0px 176px 0px 178px;
   }
 }
@@ -166,40 +166,6 @@
     }
   }
 }
-
-// .pagination {
-//   margin-top: 30px;
-//   @include tablet {
-//     margin-top: 35px;
-//   }
-//   @include desktop {
-//     margin-top: 35px;
-//   }
-//   &__list {
-//     display: flex;
-//     gap: 18px;
-//     flex-direction: row;
-//   }
-//   &__item {
-//     width: 12px;
-//     height: 12px;
-//     display: block;
-//     border-radius: 50%;
-//     background-color: $bgiconReviewColor;
-//     &--is-active {
-//       background-color: $TextBtnSecondaryColor;
-//     }
-//   }
-//   &__icon {
-//     fill: $iconReviewColor;
-//     opacity: 0;
-//     &--is-active {
-//       opacity: 1;
-//     }
-//   }
-// }
-
-// Slider
 
 .swiper-slide {
   margin-bottom: 48px;
