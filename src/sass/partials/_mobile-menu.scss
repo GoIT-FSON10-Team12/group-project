@@ -95,6 +95,13 @@
   top: 52px;
   right: 224px;
    z-index: 1;
+    background-color: $SectionSecondTextThirdColor;
   }
+  
+  .mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 254px;
 }
 
