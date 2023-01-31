@@ -16,6 +16,9 @@
     padding-left: 20px;
     align-items: center;
     max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    // margin: 0 auto;
     @include tablet {
       padding-top: 37px;
       padding-left: 34px;
@@ -83,21 +86,26 @@
   &__title {
     position: relative;
     margin-top: 137px;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 5;
     max-width: 480px;
     @include tablet {
+      position: relative;
       margin-top: 15px;
-      margin-left: 0;
+      margin-left: auto;
+      margin-right: auto;
       padding: 0 34px 0 34px;
       max-width: 768px;
     }
     @include desktop {
       margin-top: 84px;
       padding-left: 115px;
-      margin-right: 97px;
+      margin-left: auto;
+      // margin-right: 97px;
       max-width: 1200px;
     }
   }
@@ -121,19 +129,22 @@
     background-color: $SectionSecondTextThirdColor;
     border-radius: 50%;
     position: absolute;
-    top: 90px;
-    left: 36px;
+    top: -250px;
+    // left: 36px;
+    right: -86px;
     @include tablet {
       width: 324px;
       height: 322px;
-      top: 31px;
-      left: 307px;
+      top: -190px;
+      // left: 307px;
+      right: 137px;
     }
     @include desktop {
       width: 538px;
       height: 538px;
-      top: 52px;
-      left: 475px;
+      top: -315px;
+      // left: 475px;
+      right: 267px;
       z-index: 0;
     }
   }
@@ -158,6 +169,7 @@
     }
   }
   &__promo {
+    position: relative;
     display: flex;
     gap: 30px;
   }
@@ -173,14 +185,16 @@
       position: absolute;
       width: 124px;
       height: auto;
-      left: 35px;
-      top: 245px;
+      // left: 35px;
+      right: 610px;
+      top: 19px;
     }
     @include desktop {
       width: 188px;
       height: auto;
-      left: 77px;
-      top: 429px;
+      // left: 77px;
+      right: 1015px;
+      top: 56px;
     }
   }
   &__promo-description {
@@ -231,14 +245,16 @@
       position: absolute;
       width: 168px;
       height: auto;
-      left: 566px;
-      top: 266px;
+      // left: 566px;
+      right: 34px;
+      top: 42px;
     }
     @include desktop {
       width: 293px;
       height: auto;
-      top: 433px;
-      left: 878px;
+      top: 64px;
+      // left: 878px;
+      right: 106px;
     }
   }
 }
