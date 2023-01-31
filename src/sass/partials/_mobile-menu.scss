@@ -89,11 +89,12 @@
 }
 
 // TABLET //
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
   position: absolute;
   top: 52px;
   right: 224px;
+   z-index: 1;
   }
 }
 
