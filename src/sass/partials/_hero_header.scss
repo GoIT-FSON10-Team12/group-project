@@ -83,6 +83,15 @@
       display: none;
     }
   }
+  &__main-title {
+    max-width: 218px;
+    @include tablet {
+      max-width: 162px;
+    }
+    @include desktop {
+      max-width: 277px;
+    }
+  }
   &__title {
     position: relative;
     margin-top: 137px;

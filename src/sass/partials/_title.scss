@@ -6,6 +6,8 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     color: $TextBtnSecondaryColor;
+    display: flex;
+    flex-wrap: wrap;
     @include tablet {
       font-size: 22px;
       line-height: 1.14;
