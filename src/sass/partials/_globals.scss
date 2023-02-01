@@ -12,6 +12,10 @@ body {
   font-family: $DefaultFontFamily;
 }
 
+html {
+ scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
