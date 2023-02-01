@@ -1,6 +1,11 @@
 
 // widok tablet 
-
+@media screen and (max-width: 767px) {
+    .products__card-p2 {
+        display: none;
+      }
+    
+}
 @media screen and (min-width: 768px){
     .container {
         max-width: 768px;
@@ -9,6 +14,8 @@
     .products__card-list {
         margin-top: 150px;
         gap: 20px;
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -27,15 +34,22 @@
         margin-top: 0;
     }
     .products__card-cont {
-        width: 200px;
+        width: 180px;
         // max-width: 200px;
     }
     .products__card-list {
         display: flex;
     }
 
+    .products__card-p {
+        line-height: 1.76;
+    }
+    .products__card-p1 {
+        display: none;
+    }
+
     .products__card-img {
-        margin: 40px 0 40px 0;
+        margin: 40px auto 40px;
     }
 
 
@@ -60,6 +74,7 @@
     }
 
 }
+
 
 // ................. 
 // widok desktop 
@@ -87,13 +102,17 @@
         margin-top: 0;
     }
     .products__card-cont {
-        // width: 185px;
-        max-width: 241px;
+        // width: 241px;
+        width: 241px;
     }
 
     .products__card-h3 {
         font-size: 30px;
 
+    }
+
+    .products__card-h3::after {
+        bottom: -32px;
     }
 
     .products__card-p {
@@ -103,7 +122,7 @@
 
 
     .products__card-img {
-        margin: 62x 0 50px 0;
+        margin: 62x auto 50px;
     }
 
 
