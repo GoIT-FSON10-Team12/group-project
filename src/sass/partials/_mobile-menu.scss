@@ -12,6 +12,7 @@
   position: absolute;
   top: 25px;
   right: 20px;
+  margin-left: 265px;
   background-color: $SectionFirstColor;
   outline: none;
   border: none;
@@ -89,11 +90,9 @@
 }
 
 // TABLET //
-@media screen and (min-width: 768px) and (max-width: 879px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .menu-toggle {
-    position: absolute;
-    top: 52px;
-    right: 224px;
+    position: static;
     z-index: 1;
     background-color: transparent;
   }
@@ -109,11 +108,8 @@
 }
 
 // DESKTOP //
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 1280px) {
   .menu-toggle {
     display: none;
   }
 }
-
-
-
