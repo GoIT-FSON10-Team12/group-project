@@ -34,6 +34,7 @@
   // color: rgba(255, 165, 186, 1);
   color: $SectionSecondTextThirdColor;
   font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .products__title-head {
@@ -55,6 +56,7 @@
   list-style: none;
   padding: 0;
   margin-top: 141px;
+  
 }
 .products__card-element {
   margin-top: 130px;
@@ -114,7 +116,7 @@
   // background-color: rgba(212, 20, 67, 0.1);
   /* max-width na projekcie 200px */
     width: 185px;
-    max-width: 200px;
+    // max-width: 200px;
   /* text-align: center; */
 }
 
@@ -139,12 +141,13 @@
 }
 
 .products__card-p {
-  padding-top: 30px;
+  margin-top: 50px;
   font-family: $DefaultFontFamily;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
 }
+
 
 .products__card-img {
   border-radius: 50%;
@@ -154,6 +157,7 @@
 
 .products__card-img:hover {
   border: 1px solid $TextFirstBtnPrimaryColor;
+  // border: 1px solid $TextFourthColor;
   cursor: pointer;
 }
 
