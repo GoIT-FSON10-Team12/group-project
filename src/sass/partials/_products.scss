@@ -56,6 +56,7 @@
   list-style: none;
   padding: 0;
   margin-top: 141px;
+  
 }
 .products__card-element {
   margin-top: 130px;
@@ -156,6 +157,7 @@
 
 .products__card-img:hover {
   border: 1px solid $TextFirstBtnPrimaryColor;
+  // border: 1px solid $TextFourthColor;
   cursor: pointer;
 }
 
