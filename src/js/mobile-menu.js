@@ -23,3 +23,12 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+// Mobile menu hide on scrolling
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = menu.querySelectorAll('a');
+menuLinks.forEach(el => {
+  el.onclick = e => {
+    menu.classList.contains('is-open') ? menu.classList.remove('is-open') : '';
+  };
+});
