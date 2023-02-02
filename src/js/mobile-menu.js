@@ -25,10 +25,22 @@
 })();
 
 // Mobile menu hide on scrolling
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = menu.querySelectorAll('a');
-menuLinks.forEach(el => {
-  el.onclick = e => {
-    menu.classList.contains('is-open') ? menu.classList.remove('is-open') : '';
-  };
+window.addEventListener('DOMContentLoaded', (e) => {
+
+ const menu = document.querySelector('#mobile-menu');
+ const menuLinks = menu.querySelectorAll('a');
+ const body = document.querySelector('body');
+ menuLinks.forEach((el) => {
+
+     el.onclick = (e) => {
+         menu.classList.contains('is-open')
+         ? menu.classList.remove('is-open')
+         : ''
+
+     body.style.overflow == 'hidden'
+     ? body.style.overflow = ''
+     : ''
+     }
+ })
+
 });
