@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
          : ''
 
      body.style.overflow == 'hidden'
-     ? body.style.overflow = ''
+     ? body.style.overflow = 'unset'
      : ''
      }
  })
